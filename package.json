@@ -1,5 +1,5 @@
 {
-  "name": "Reanimated2Playground",
+  "name": "shogureigns",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -32,5 +32,17 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "description": "This project is just a performance test of react-native technology combined with reanimated library.\r If you think i should delete it because of copyright just DM me.\r Original game is called Reigns and you can see it here: [Reigns](https://apps.apple.com/pl/app/reigns/id1114127463?l=pl)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Speki-Association/Shogureigns.git"
+  },
+  "author": "Speki-Association",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Speki-Association/Shogureigns/issues"
+  },
+  "homepage": "https://github.com/Speki-Association/Shogureigns#readme"
 }

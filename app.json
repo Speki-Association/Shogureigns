@@ -1,15 +1,11 @@
 {
-  "name": "Reanimated2Playground",
-  "displayName": "Reanimated2Playground",
+  "name": "Shogureigns",
+  "displayName": "Shogureigns",
   "expo": {
-    "name": "Reanimated2Playground",
+    "name": "Shogureigns",
     "privacy": "unlisted",
     "sdkVersion": "34.0.0",
     "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ]
+    "platforms": ["ios", "android", "web"]
   }
 }
