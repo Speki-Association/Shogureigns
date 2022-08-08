@@ -1,7 +1,5 @@
-import Kardz from './src/Kardz.json' assert {type: 'json'};
-
 export default function useGeneratedCards() {
-  console.log(Kardz);
+  const Kardz = require('./src/Kardz.json');
 
   const Cards = [
     {
