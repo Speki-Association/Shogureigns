@@ -7,6 +7,7 @@ import PowerIndicators from './PowerIndicators';
 import PlaceholderBackStaticCard from './PlaceholderBackStaticCard';
 import StartButton from './StartButton';
 import useGeneratedCards from './useGeneratedCards';
+import {Dimensions} from 'react-native';
 
 export default function AnimatedStyleUpdateExample() {
   const {getCardByIndex} = useGeneratedCards();
@@ -74,11 +75,15 @@ export default function AnimatedStyleUpdateExample() {
     showNextCard(700);
   };
 
+  ////////////////////////Top wrapper - Powers Indicators
+  /*
+  <View style={styles.topWrapper}>
+      <PowerIndicators currentMood={currentMood} />
+  </View>
+  */
+
   return (
     <View style={styles.wrapper}>
-      <View style={styles.topWrapper}>
-        <PowerIndicators currentMood={currentMood} />
-      </View>
       <View style={styles.questionWrapper}>
         <Question question={currentCard.question} showQuestion={showQuestion} />
       </View>
@@ -104,9 +109,10 @@ export default function AnimatedStyleUpdateExample() {
 
 const styles = StyleSheet.create({
   wrapper: {
-    flex: 1,
-    flexDirection: 'column',
+    display: 'flex',
+    justifyContent: 'center',
     alignItems: 'center',
+    height: '100%',
   },
   cardWrapper: {
     height: 240,
