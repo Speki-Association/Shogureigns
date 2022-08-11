@@ -1,24 +1,25 @@
 {
-  "name": "shogureigns",
+  "name": "Reanimated2Playground",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start",
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider; react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "web": "expo start --web || expo start --web --web-only"
+    "web": "expo start --web || expo start --web --web-only",
+    "build": "react-scripts --openssl-legacy-provider build"
   },
   "dependencies": {
     "expo-asset": "^8.2.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-native": "0.68.0",
+    "react": "16.13.1",
+    "react-dom": "^16.13.1",
+    "react-native": "0.63.4",
     "react-native-fast-image": "^8.3.4",
     "react-native-gesture-handler": "^1.9.0",
-    "react-native-reanimated": "2.3.0-beta.2",
-    "react-native-web": "^0.18.7"
+    "react-native-reanimated": "2.0.0-rc.3",
+    "react-native-web": "^0.14.7"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
@@ -33,13 +34,8 @@
   "jest": {
     "preset": "react-native"
   },
-  "description": "This project is just a performance test of react-native technology combined with reanimated library.\r If you think i should delete it because of copyright just DM me.\r Original game is called Reigns and you can see it here: [Reigns](https://apps.apple.com/pl/app/reigns/id1114127463?l=pl)",
   "main": "index.js",
-  "repository": "git+https://github.com/Speki-Association/Shogureigns.git",
-  "author": "Speki-Association",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Speki-Association/Shogureigns/issues"
-  },
-  "homepage": "https://github.com/Speki-Association/Shogureigns#readme"
+  "repository": "git@github.com:wojtus7/reanimated-story-cards.git",
+  "author": "TomRedLev <redon.tom@gmail.com>",
+  "license": "MIT"
 }

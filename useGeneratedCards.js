@@ -1,6 +1,4 @@
 export default function useGeneratedCards() {
-  const Kardz = require('./src/Kardz.json');
-
   const Cards = [
     {
       question:
@@ -50,8 +48,6 @@ export default function useGeneratedCards() {
       image: 'https://image.flaticon.com/icons/png/512/3480/3480000.png',
       background: '#ccc',
     },
-
-    //New data set from Kardz DB
   ];
 
   const getCardByIndex = (index) => {
