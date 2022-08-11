@@ -12,7 +12,7 @@ export default function AnimatedStyleUpdateExample() {
   const {getCardByIndex} = useGeneratedCards();
   const [currentCard, setCurrentCard] = useState({});
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
-  const [currentMood, setCurrentMood] = useState({happy: [], sad: []});
+  // const [currentMood, setCurrentMood] = useState({happy: [], sad: []});
 
   const [showStartButton, setShowStartButton] = useState(true);
   const [showAnimatedReverseCard, setShowAnimatedReverseCard] = useState(false);
@@ -48,19 +48,19 @@ export default function AnimatedStyleUpdateExample() {
   };
 
   const onChooseLeftAnswer = () => {
-    setCurrentMood(currentCard.onLeft);
+    //setCurrentMood(currentCard.onLeft);
     createNewCard();
-    setTimeout(() => {
-      setCurrentMood({happy: [], sad: []});
-    }, 200);
+    // setTimeout(() => {
+    //   setCurrentMood({happy: [], sad: []});
+    // }, 200);
   };
 
   const onChooseRightAnswer = () => {
-    setCurrentMood(currentCard.onRight);
+    //setCurrentMood(currentCard.onRight);
     createNewCard();
-    setTimeout(() => {
-      setCurrentMood({happy: [], sad: []});
-    }, 200);
+    // setTimeout(() => {
+    //   setCurrentMood({happy: [], sad: []});
+    // }, 200);
   };
 
   const createNewCard = () => {
@@ -77,10 +77,10 @@ export default function AnimatedStyleUpdateExample() {
   return (
     <View style={styles.wrapper}>
       <View style={styles.topWrapper}>
-        <PowerIndicators currentMood={currentMood} />
+        {/* <PowerIndicators currentMood={currentMood} /> */}
       </View>
       <View style={styles.questionWrapper}>
-        <Question question={currentCard.question} showQuestion={showQuestion} />
+        <Question question={currentCard["question"]} showQuestion={showQuestion} />
       </View>
       <View style={styles.cardWrapper}>
         {showStartButton && <StartButton onPress={onStartGame} />}
@@ -90,10 +90,10 @@ export default function AnimatedStyleUpdateExample() {
           <Card
             onChooseLeftAnswer={onChooseLeftAnswer}
             onChooseRightAnswer={onChooseRightAnswer}
-            leftText={currentCard.leftText}
-            rightText={currentCard.rightText}
-            image={currentCard.image}
-            backgroundColor={currentCard.background}
+            leftText={currentCard["yes"]}
+            rightText={currentCard["no"]}
+            image={currentCard["image"]}
+            backgroundColor={currentCard["background"]}
           />
         )}
       </View>
