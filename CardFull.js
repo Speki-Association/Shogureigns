@@ -217,14 +217,14 @@ const Card = ({
 
 const styles = StyleSheet.create({
   wrapper: {
-    height: 240,
-    width: 240,
+    height: 420,
+    width: 304,
     borderRadius: 35,
     overflow: 'hidden',
   },
   wrapperBack: {
-    height: 240,
-    width: 240,
+    height: 420,
+    width: 304,
     borderRadius: 35,
     overflow: 'hidden',
     position: 'absolute',

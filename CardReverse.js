@@ -1,17 +1,15 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import FastImage from 'react-native-fast-image';
+import Image from 'react-native-fast-image';
 
 const CardReverse = ({isMirrored, shadowOpacity = 0}) => {
   return (
     <>
       <View style={styles.wrapper}>
         <View style={[styles.shadow, {opacity: shadowOpacity}]} />
-        <FastImage
-          source={{
-            uri: 'https://image.flaticon.com/icons/png/512/3483/3483048.png',
-          }}
-          style={styles.reverseIcon}
+        <Image
+          source={require('./src/graphic-assets/reverse_bg.jpg')}
+          style={styles.reverseBG}
         />
       </View>
     </>
@@ -21,13 +19,12 @@ const CardReverse = ({isMirrored, shadowOpacity = 0}) => {
 const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
     alignItems: 'center',
-    backgroundColor: '#FFCCD3',
   },
-  reverseIcon: {
-    height: 140,
-    width: 140,
+  reverseBG: {
+    height: '100%',
+    width: '100%',
   },
   shadow: {
     position: 'absolute',
