@@ -119,40 +119,6 @@ export default function AnimatedStyleUpdateExample() {
 }
 
 const styles = StyleSheet.create({
-  // wrapper: {
-  //   display: 'flex',
-  //   justifyContent: 'space-between',
-  //   alignItems: 'center',
-  //   height: '100%',
-  // },
-  // imageBG: {
-  //   flex: 1,
-  //   justifyContent: 'center',
-  //   alignItems: 'center',
-  // },
-  // cardWrapper: {
-  //   height: 420,
-  //   alignItems: 'center',
-  // },
-  // questionWrapper: {
-  //   height: 80,
-  //   justifyContent: 'center',
-  //   alignItems: 'center',
-  // },
-  // nameWrapper: {
-  //   height: 100,
-  //   justifyContent: 'center',
-  //   alignItems: 'center',
-  // },
-  // topWrapper: {
-  //   width: '100%',
-  //   height: 120,
-  //   backgroundColor: '#FAFAFA',
-  // },
-  // reverseBG: {
-  //   width: '80%',
-  //   justifyContent: 'center',
-  // },
   wrapper: {
     display: 'flex',
     justifyContent: 'space-between',

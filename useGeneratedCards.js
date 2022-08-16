@@ -26,7 +26,7 @@ export default function useGeneratedCards() {
     do {
       currentCardIndex++;
     } while (
-      Cards[currentCardIndex].condition === '' &&
+      Cards[currentCardIndex].condition !== '' &&
       currentCardIndex < Cards.length
     );
     if (currentCardIndex === Cards.length) {
