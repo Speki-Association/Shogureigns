@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import Card from './Card';
 import PlaceholderBackCards from './PlaceholderBackCards';
 import Question from './Question';
-import PowerIndicators from './PowerIndicators';
+//import PowerIndicators from './PowerIndicators';
 import PlaceholderBackStaticCard from './PlaceholderBackStaticCard';
 import StartButton from './StartButton';
 import useGeneratedCards from './useGeneratedCards';
@@ -11,10 +11,9 @@ import {Dimensions} from 'react-native';
 import GeneralStatusBarColor from './GeneralStatusBarColor';
 
 export default function AnimatedStyleUpdateExample() {
-  const {getCardByIndex} = useGeneratedCards();
+  const {getCardByIndex, getCardByCondition} = useGeneratedCards();
   const [currentCard, setCurrentCard] = useState({});
-  const [currentCardIndex, setCurrentCardIndex] = useState(0);
-  const [currentMood, setCurrentMood] = useState({happy: [], sad: []});
+  // const [currentMood, setCurrentMood] = useState({happy: [], sad: []});
 
   const [showStartButton, setShowStartButton] = useState(true);
   const [showAnimatedReverseCard, setShowAnimatedReverseCard] = useState(false);
@@ -33,9 +32,7 @@ export default function AnimatedStyleUpdateExample() {
   };
 
   const onStartGame = () => {
-    setCurrentCard(getCardByIndex(currentCardIndex));
-    setCurrentCardIndex(currentCardIndex + 1);
-
+    setCurrentCard(getCardByCondition('start'));
     setTimeout(() => {
       setShowStartButton(false);
       setShowAnimatedReverseCard(true);
@@ -50,27 +47,40 @@ export default function AnimatedStyleUpdateExample() {
   };
 
   const onChooseLeftAnswer = () => {
-    setCurrentMood(currentCard.onLeft);
-    createNewCard();
-    setTimeout(() => {
-      setCurrentMood({happy: [], sad: []});
-    }, 200);
+    //setCurrentMood(currentCard.onLeft);
+    let card = null;
+    if (currentCard.yes_custom !== '') {
+      card = getCardByCondition(currentCard.yes_custom);
+    } else {
+      card = getCardByIndex();
+      // setCurrentCardIndex(currentCardIndex + 1);
+    }
+    createNewCard(card);
+    // setTimeout(() => {
+    //   setCurrentMood({happy: [], sad: []});
+    // }, 200);
   };
 
   const onChooseRightAnswer = () => {
-    setCurrentMood(currentCard.onRight);
-    createNewCard();
-    setTimeout(() => {
-      setCurrentMood({happy: [], sad: []});
-    }, 200);
+    //setCurrentMood(currentCard.onRight);
+    let card = null;
+    if (currentCard.no_custom !== '') {
+      card = getCardByCondition(currentCard.no_custom);
+    } else {
+      card = getCardByIndex();
+      // setCurrentCardIndex(currentCardIndex + 1);
+    }
+    createNewCard(card);
+    // setTimeout(() => {
+    //   setCurrentMood({happy: [], sad: []});
+    // }, 200);
   };
 
-  const createNewCard = () => {
+  const createNewCard = (card) => {
+    console.log(card);
     setShowQuestion(false);
     setTimeout(() => {
-      // let it fly away in peace for 300 ms
-      setCurrentCard(getCardByIndex(currentCardIndex));
-      setCurrentCardIndex(currentCardIndex + 1);
+      setCurrentCard(card);
       setShowCard(false);
     }, 300);
     showNextCard(700);
@@ -98,11 +108,6 @@ export default function AnimatedStyleUpdateExample() {
         barStyle="dark-content"
       />
       <View style={styles.topWrapper}>
-        <ImageBackground
-          source={require('./src/graphic-assets/topWrapperBg.png')}
-          resizeMode="cover"
-          style={styles.imageBG}
-        />
       </View>
       <View style={styles.questionWrapper}>
         <Question question={currentCard.question} showQuestion={showQuestion} />
@@ -115,8 +120,8 @@ export default function AnimatedStyleUpdateExample() {
           <Card
             onChooseLeftAnswer={onChooseLeftAnswer}
             onChooseRightAnswer={onChooseRightAnswer}
-            leftText={currentCard.leftText}
-            rightText={currentCard.rightText}
+            leftText={currentCard.yes}
+            rightText={currentCard.no}
             image={currentCard.image}
             backgroundColor={currentCard.background}
           />
