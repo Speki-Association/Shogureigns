@@ -15,8 +15,8 @@ const PlaceholderBackStaticCard = () => {
 const styles = StyleSheet.create({
   wrapperBack: {
     position: 'absolute',
-    height: 240,
-    width: 240,
+    height: 420,
+    width: 304,
     backgroundColor: '#aaa',
     borderRadius: 35,
     overflow: 'hidden',

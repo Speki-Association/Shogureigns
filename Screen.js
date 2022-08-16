@@ -1,4 +1,4 @@
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, ImageBackground, Image} from 'react-native';
 import React, {useState} from 'react';
 import Card from './Card';
 import PlaceholderBackCards from './PlaceholderBackCards';
@@ -7,6 +7,8 @@ import Question from './Question';
 import PlaceholderBackStaticCard from './PlaceholderBackStaticCard';
 import StartButton from './StartButton';
 import useGeneratedCards from './useGeneratedCards';
+import {Dimensions} from 'react-native';
+import GeneralStatusBarColor from './GeneralStatusBarColor';
 
 export default function AnimatedStyleUpdateExample() {
   const {getCardByIndex, getCardByCondition} = useGeneratedCards();
@@ -84,10 +86,28 @@ export default function AnimatedStyleUpdateExample() {
     showNextCard(700);
   };
 
+  ////////////////////////Top wrapper - Powers Indicators
+  /*
+  
+
+
+
+  //Image bg 
+  <ImageBackground
+      source={require('./src/graphic-assets/bg.jpg')}
+      resizeMode="cover"
+      style={styles.imageBG}>
+
+          </ImageBackground> 
+  */
+
   return (
     <View style={styles.wrapper}>
+      <GeneralStatusBarColor
+        backgroundColor="#FAFAFA"
+        barStyle="dark-content"
+      />
       <View style={styles.topWrapper}>
-        {/* <PowerIndicators currentMood={currentMood} /> */}
       </View>
       <View style={styles.questionWrapper}>
         <Question question={currentCard.question} showQuestion={showQuestion} />
@@ -114,17 +134,22 @@ export default function AnimatedStyleUpdateExample() {
 
 const styles = StyleSheet.create({
   wrapper: {
-    flex: 1,
-    flexDirection: 'column',
+    display: 'flex',
+    justifyContent: 'space-between',
     alignItems: 'center',
+    height: '100%',
   },
-  cardWrapper: {
-    height: 240,
+  imageBG: {
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
+  cardWrapper: {
+    height: 420,
+    alignItems: 'center',
+  },
   questionWrapper: {
-    height: 100,
+    height: 80,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -135,7 +160,11 @@ const styles = StyleSheet.create({
   },
   topWrapper: {
     width: '100%',
-    height: 200,
-    backgroundColor: '#ccc',
+    height: 120,
+    backgroundColor: '#FAFAFA',
+  },
+  reverseBG: {
+    width: '80%',
+    justifyContent: 'center',
   },
 });
