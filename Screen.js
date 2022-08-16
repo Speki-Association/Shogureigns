@@ -3,15 +3,14 @@ import React, {useState} from 'react';
 import Card from './Card';
 import PlaceholderBackCards from './PlaceholderBackCards';
 import Question from './Question';
-import PowerIndicators from './PowerIndicators';
+//import PowerIndicators from './PowerIndicators';
 import PlaceholderBackStaticCard from './PlaceholderBackStaticCard';
 import StartButton from './StartButton';
 import useGeneratedCards from './useGeneratedCards';
 
 export default function AnimatedStyleUpdateExample() {
-  const {getCardByIndex} = useGeneratedCards();
+  const {getCardByIndex, getCardByCondition} = useGeneratedCards();
   const [currentCard, setCurrentCard] = useState({});
-  const [currentCardIndex, setCurrentCardIndex] = useState(0);
   // const [currentMood, setCurrentMood] = useState({happy: [], sad: []});
 
   const [showStartButton, setShowStartButton] = useState(true);
@@ -31,9 +30,7 @@ export default function AnimatedStyleUpdateExample() {
   };
 
   const onStartGame = () => {
-    setCurrentCard(getCardByIndex(currentCardIndex));
-    setCurrentCardIndex(currentCardIndex + 1);
-
+    setCurrentCard(getCardByCondition('start'));
     setTimeout(() => {
       setShowStartButton(false);
       setShowAnimatedReverseCard(true);
@@ -49,7 +46,14 @@ export default function AnimatedStyleUpdateExample() {
 
   const onChooseLeftAnswer = () => {
     //setCurrentMood(currentCard.onLeft);
-    createNewCard();
+    let card = null;
+    if (currentCard.yes_custom !== '') {
+      card = getCardByCondition(currentCard.yes_custom);
+    } else {
+      card = getCardByIndex();
+      // setCurrentCardIndex(currentCardIndex + 1);
+    }
+    createNewCard(card);
     // setTimeout(() => {
     //   setCurrentMood({happy: [], sad: []});
     // }, 200);
@@ -57,18 +61,24 @@ export default function AnimatedStyleUpdateExample() {
 
   const onChooseRightAnswer = () => {
     //setCurrentMood(currentCard.onRight);
-    createNewCard();
+    let card = null;
+    if (currentCard.no_custom !== '') {
+      card = getCardByCondition(currentCard.no_custom);
+    } else {
+      card = getCardByIndex();
+      // setCurrentCardIndex(currentCardIndex + 1);
+    }
+    createNewCard(card);
     // setTimeout(() => {
     //   setCurrentMood({happy: [], sad: []});
     // }, 200);
   };
 
-  const createNewCard = () => {
+  const createNewCard = (card) => {
+    console.log(card);
     setShowQuestion(false);
     setTimeout(() => {
-      // let it fly away in peace for 300 ms
-      setCurrentCard(getCardByIndex(currentCardIndex));
-      setCurrentCardIndex(currentCardIndex + 1);
+      setCurrentCard(card);
       setShowCard(false);
     }, 300);
     showNextCard(700);
@@ -80,7 +90,7 @@ export default function AnimatedStyleUpdateExample() {
         {/* <PowerIndicators currentMood={currentMood} /> */}
       </View>
       <View style={styles.questionWrapper}>
-        <Question question={currentCard["question"]} showQuestion={showQuestion} />
+        <Question question={currentCard.question} showQuestion={showQuestion} />
       </View>
       <View style={styles.cardWrapper}>
         {showStartButton && <StartButton onPress={onStartGame} />}
@@ -90,10 +100,10 @@ export default function AnimatedStyleUpdateExample() {
           <Card
             onChooseLeftAnswer={onChooseLeftAnswer}
             onChooseRightAnswer={onChooseRightAnswer}
-            leftText={currentCard["yes"]}
-            rightText={currentCard["no"]}
-            image={currentCard["image"]}
-            backgroundColor={currentCard["background"]}
+            leftText={currentCard.yes}
+            rightText={currentCard.no}
+            image={currentCard.image}
+            backgroundColor={currentCard.background}
           />
         )}
       </View>
