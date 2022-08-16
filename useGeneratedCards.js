@@ -1,3 +1,5 @@
+import Card from './Card';
+
 export default function useGeneratedCards() {
   function shuffle(array) {
     let currentIndex = array.length,
@@ -23,7 +25,14 @@ export default function useGeneratedCards() {
     currentCardIndex++;
     do {
       currentCardIndex++;
-    } while (Cards[currentCardIndex].condition === '');
+    } while (
+      Cards[currentCardIndex].condition === '' &&
+      currentCardIndex < Cards.length
+    );
+    if (currentCardIndex === Cards.length) {
+      return Cards[0];
+    }
+    return Cards[currentCardIndex];
   };
 
   const getCardByCondition = (condition) => {
@@ -32,6 +41,7 @@ export default function useGeneratedCards() {
         return Cards[i];
       }
     }
+    return Cards[0];
   };
 
   return {

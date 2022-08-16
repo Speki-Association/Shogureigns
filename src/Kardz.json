@@ -7,8 +7,8 @@
     "yes_army": "",
     "yes_money": "",
     "yes_people": "",
-    "yes_religion": "amaterasu_sex_choice",
-    "yes_custom": "",
+    "yes_religion": "",
+    "yes_custom": "amaterasu_sex_choice",
     "yes": "Oui.",
     "no": "non.",
     "no_custom": "death_by_amaterasu_no_ruler",
@@ -19,7 +19,7 @@
     "card_type": "",
     "id": "e1a20cb8267f46eb9160d3a1e2f79fbb",
     "character": "Amaterasu - Déesse du soleil",
-    "image" : "https://image.flaticon.com/icons/png/512/3479/3479910.png",
+    "image" : "emperor",
     "background" : "#ccc"
   },
   {
@@ -42,7 +42,7 @@
     "card_type": "",
     "id": "228354fa71ed4af08250123fe319eb1c",
     "character": "Amaterasu - Déesse du soleil",
-    "image" : "https://image.flaticon.com/icons/png/512/3479/3479910.png",
+    "image" : "emperor",
     "background" : "#ccc"
   },
   {
@@ -65,7 +65,7 @@
   "card_type": "",
   "id": "16c42732f34a4c9c94c5713660959049",
   "character": "Amaterasu - Déesse du soleil",
-  "image" : "https://image.flaticon.com/icons/png/512/3479/3479910.png",
+  "image" : "emperor",
   "background" : "#ccc"
   },
   {
@@ -88,7 +88,7 @@
   "card_type": "",
   "id": "c08fa46ae2d6454a837d0ea3aab12544",
   "character": "Amaterasu - Déesse du soleil",
-  "image" : "https://image.flaticon.com/icons/png/512/3479/3479910.png",
+  "image" : "emperor",
   "background" : "#ccc"
   },
   {
@@ -111,7 +111,7 @@
   "card_type": "",
   "id": "a7f4152668124c77bfa78d988d772b00",
   "character": "Amaterasu - Déesse du soleil",
-  "image" : "https://image.flaticon.com/icons/png/512/3479/3479910.png",
+  "image" : "emperor",
   "background" : "#ccc"
   },
   {
@@ -134,7 +134,7 @@
   "card_type": "",
   "id": "cbf1ee9d553845e591acc8355cf15b06",
   "character": "Amaterasu - Déesse du soleil",
-  "image" : "https://image.flaticon.com/icons/png/512/3479/3479910.png",
+  "image" : "emperor",
   "background" : "#ccc"
   }
 ]

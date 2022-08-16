@@ -48,14 +48,13 @@ export default function AnimatedStyleUpdateExample() {
 
   const onChooseLeftAnswer = () => {
     //setCurrentMood(currentCard.onLeft);
-    let card = null;
     if (currentCard.yes_custom !== '') {
-      card = getCardByCondition(currentCard.yes_custom);
+      setCurrentCard(getCardByCondition(currentCard.yes_custom));
     } else {
-      card = getCardByIndex();
+      setCurrentCard(getCardByIndex());
       // setCurrentCardIndex(currentCardIndex + 1);
     }
-    createNewCard(card);
+    createNewCard();
     // setTimeout(() => {
     //   setCurrentMood({happy: [], sad: []});
     // }, 200);
@@ -63,52 +62,39 @@ export default function AnimatedStyleUpdateExample() {
 
   const onChooseRightAnswer = () => {
     //setCurrentMood(currentCard.onRight);
-    let card = null;
     if (currentCard.no_custom !== '') {
-      card = getCardByCondition(currentCard.no_custom);
+      setCurrentCard(getCardByCondition(currentCard.no_custom));
     } else {
-      card = getCardByIndex();
+      setCurrentCard(getCardByIndex());
       // setCurrentCardIndex(currentCardIndex + 1);
     }
-    createNewCard(card);
+    createNewCard();
     // setTimeout(() => {
     //   setCurrentMood({happy: [], sad: []});
     // }, 200);
   };
 
   const createNewCard = (card) => {
-    console.log(card);
     setShowQuestion(false);
     setTimeout(() => {
-      setCurrentCard(card);
       setShowCard(false);
     }, 300);
     showNextCard(700);
   };
 
-  ////////////////////////Top wrapper - Powers Indicators
-  /*
-  
-
-
-
-  //Image bg 
-  <ImageBackground
-      source={require('./src/graphic-assets/bg.jpg')}
-      resizeMode="cover"
-      style={styles.imageBG}>
-
-          </ImageBackground> 
-  */
-
   return (
     <View style={styles.wrapper}>
+      <View style={styles.topWrapper}>
+        <ImageBackground
+          source={require('./src/graphic-assets/topWrapperBg.png')}
+          resizeMode="cover"
+          style={styles.imageBG}
+        />
+      </View>
       <GeneralStatusBarColor
         backgroundColor="#FAFAFA"
         barStyle="dark-content"
       />
-      <View style={styles.topWrapper}>
-      </View>
       <View style={styles.questionWrapper}>
         <Question question={currentCard.question} showQuestion={showQuestion} />
       </View>
@@ -133,6 +119,40 @@ export default function AnimatedStyleUpdateExample() {
 }
 
 const styles = StyleSheet.create({
+  // wrapper: {
+  //   display: 'flex',
+  //   justifyContent: 'space-between',
+  //   alignItems: 'center',
+  //   height: '100%',
+  // },
+  // imageBG: {
+  //   flex: 1,
+  //   justifyContent: 'center',
+  //   alignItems: 'center',
+  // },
+  // cardWrapper: {
+  //   height: 420,
+  //   alignItems: 'center',
+  // },
+  // questionWrapper: {
+  //   height: 80,
+  //   justifyContent: 'center',
+  //   alignItems: 'center',
+  // },
+  // nameWrapper: {
+  //   height: 100,
+  //   justifyContent: 'center',
+  //   alignItems: 'center',
+  // },
+  // topWrapper: {
+  //   width: '100%',
+  //   height: 120,
+  //   backgroundColor: '#FAFAFA',
+  // },
+  // reverseBG: {
+  //   width: '80%',
+  //   justifyContent: 'center',
+  // },
   wrapper: {
     display: 'flex',
     justifyContent: 'space-between',
