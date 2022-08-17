@@ -83,6 +83,10 @@ export default function AnimatedStyleUpdateExample() {
 
   return (
     <View style={styles.wrapper}>
+      <GeneralStatusBarColor
+        backgroundColor="#FAFAFA"
+        barStyle="dark-content"
+      />
       <View style={styles.topWrapper}>
         <ImageBackground
           source={require('./src/graphic-assets/topWrapperBg.png')}
@@ -90,10 +94,7 @@ export default function AnimatedStyleUpdateExample() {
           style={styles.imageBG}
         />
       </View>
-      <GeneralStatusBarColor
-        backgroundColor="#FAFAFA"
-        barStyle="dark-content"
-      />
+
       <View style={styles.questionWrapper}>
         <Question question={currentCard.question} showQuestion={showQuestion} />
       </View>
