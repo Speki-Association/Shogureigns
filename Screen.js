@@ -9,9 +9,10 @@ import StartButton from './StartButton';
 import useGeneratedCards from './useGeneratedCards';
 import {Dimensions} from 'react-native';
 import GeneralStatusBarColor from './GeneralStatusBarColor';
+import { cond } from 'react-native-reanimated';
 
 export default function AnimatedStyleUpdateExample() {
-  const {getCardByIndex, getCardByCondition} = useGeneratedCards();
+  const {getCardByName, getCard} = useGeneratedCards();
   const [currentCard, setCurrentCard] = useState({});
   // const [currentMood, setCurrentMood] = useState({happy: [], sad: []});
 
@@ -20,6 +21,7 @@ export default function AnimatedStyleUpdateExample() {
   const [showReverseCard, setShowReverseCard] = useState(false);
   const [showCard, setShowCard] = useState(false);
   const [showQuestion, setShowQuestion] = useState(false);
+  const conditions = {};
 
   // TODO refactor those settimeouts
   const showNextCard = (timeout) => {
@@ -32,7 +34,7 @@ export default function AnimatedStyleUpdateExample() {
   };
 
   const onStartGame = () => {
-    setCurrentCard(getCardByCondition('start'));
+    setCurrentCard(getCardByName('amaterasu_first_contact', conditions));
     setTimeout(() => {
       setShowStartButton(false);
       setShowAnimatedReverseCard(true);
@@ -47,31 +49,27 @@ export default function AnimatedStyleUpdateExample() {
   };
 
   const onChooseLeftAnswer = () => {
-    //setCurrentMood(currentCard.onLeft);
-    if (currentCard.yes_custom !== '') {
-      setCurrentCard(getCardByCondition(currentCard.yes_custom));
+    for (const condition in currentCard.yes_custom) {
+      conditions[condition] = currentCard.yes_custom[condition];
+    }
+    if (currentCard.yes_next_card !== '') {
+      setCurrentCard(getCardByName(currentCard.yes_next_card, conditions));
     } else {
-      setCurrentCard(getCardByIndex());
-      // setCurrentCardIndex(currentCardIndex + 1);
+      setCurrentCard(getCard(conditions));
     }
     createNewCard();
-    // setTimeout(() => {
-    //   setCurrentMood({happy: [], sad: []});
-    // }, 200);
   };
 
   const onChooseRightAnswer = () => {
-    //setCurrentMood(currentCard.onRight);
-    if (currentCard.no_custom !== '') {
-      setCurrentCard(getCardByCondition(currentCard.no_custom));
+    for (const condition in currentCard.no_custom) {
+      conditions[condition] = currentCard.no_custom[condition];
+    }
+    if (currentCard.no_next_card !== {}) {
+      setCurrentCard(getCardByName(currentCard.no_next_card, conditions));
     } else {
-      setCurrentCard(getCardByIndex());
-      // setCurrentCardIndex(currentCardIndex + 1);
+      setCurrentCard(getCard(conditions));
     }
     createNewCard();
-    // setTimeout(() => {
-    //   setCurrentMood({happy: [], sad: []});
-    // }, 200);
   };
 
   const createNewCard = (card) => {
