@@ -37,8 +37,9 @@ export default function useGeneratedCards() {
   const verifyCard = (card, conditions) => {
     for (const condition in card.conditions) {
       if (
-        card.conditions.hasOwnProperty(condition) &&
-        !conditions.hasOwnProperty(condition)
+        (card.conditions.hasOwnProperty(condition) &&
+          !conditions.hasOwnProperty(condition)) ||
+        card.lock === -1
       ) {
         return false;
       }
@@ -47,6 +48,7 @@ export default function useGeneratedCards() {
   };
 
   const getCardByName = (name, conditions) => {
+    decayRound(conditions);
     for (let i = 0; i < Cards.length; i++) {
       if (Cards[i].kard === name) {
         if (verifyCard(Cards[i], conditions)) {
@@ -71,11 +73,9 @@ export default function useGeneratedCards() {
   const getCard = (conditions) => {
     decayRound(conditions);
     for (let i = 0; i < Cards.length; i++) {
-      if (Cards[i].lock === 0) {
-        if (verifyCard(Cards[i], conditions)) {
-          Cards[i].lock = -1;
-          return Cards[i];
-        }
+      if (verifyCard(Cards[i], conditions)) {
+        Cards[i].lock = -1;
+        return Cards[i];
       }
     }
     return Cards[0];

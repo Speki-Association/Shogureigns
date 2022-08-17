@@ -20,7 +20,7 @@ export default function AnimatedStyleUpdateExample() {
   const [showReverseCard, setShowReverseCard] = useState(false);
   const [showCard, setShowCard] = useState(false);
   const [showQuestion, setShowQuestion] = useState(false);
-  const conditions = {};
+  const [conditions, setConditions] = useState({});
 
   // TODO refactor those settimeouts
   const showNextCard = (timeout) => {
@@ -51,6 +51,7 @@ export default function AnimatedStyleUpdateExample() {
     for (const condition in currentCard.yes_custom) {
       conditions[condition] = currentCard.yes_custom[condition];
     }
+    setConditions(conditions);
     if (currentCard.yes_next_card !== '') {
       setCurrentCard(getCardByName(currentCard.yes_next_card, conditions));
     } else {
@@ -63,6 +64,7 @@ export default function AnimatedStyleUpdateExample() {
     for (const condition in currentCard.no_custom) {
       conditions[condition] = currentCard.no_custom[condition];
     }
+    setConditions(conditions);
     if (currentCard.no_next_card !== {}) {
       setCurrentCard(getCardByName(currentCard.no_next_card, conditions));
     } else {
