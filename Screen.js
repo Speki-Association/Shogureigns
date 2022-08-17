@@ -9,7 +9,6 @@ import StartButton from './StartButton';
 import useGeneratedCards from './useGeneratedCards';
 import {Dimensions} from 'react-native';
 import GeneralStatusBarColor from './GeneralStatusBarColor';
-import { cond } from 'react-native-reanimated';
 
 export default function AnimatedStyleUpdateExample() {
   const {getCardByName, getCard} = useGeneratedCards();
