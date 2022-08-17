@@ -137,8 +137,84 @@
    "question": "N’étant pas le souverain ou la souveraine attendu. Amaterasu vous infligea la mort part combustion spontanée.",
    "yes": "",
    "yes_custom": {},
-   "lock": null,
+   "lock": 0,
    "yes_next_card": "amaterasu_first_contact",
    "no_next_card": "amaterasu_first_contact"
- }
+ },
+ {
+  "kard": "banker_first_contact",
+  "background": "#ccc",
+  "character": "Carlos Gone - Le Banquier",
+  "conditions": {},
+  "image": "daimyo",
+  "no": "Euh…",
+  "no_custom": {
+    "first_meeting_banker" : 1
+  },
+  "question": "Messire, je suis Carlos Gone, directeur réputé des écuries Nichan. Je vais vous aider à gérer l’économie de ce pays pour en faire le royaume le plus prospère du monde !",
+  "yes": "Que…",
+  "yes_custom": {
+    "first_meeting_banker" : 1
+  },
+  "lock": 0,
+  "yes_next_card": "",
+  "no_next_card": ""
+},
+{
+  "kard": "banker_first_deal",
+  "background": "#ccc",
+  "character": "Carlos Gone - Le Banquier",
+  "conditions": {
+    "first_meeting_banker" : 1
+  },
+  "image": "daimyo",
+  "no": "Non.",
+  "no_custom": {},
+  "question": "Messire, j’ai obtenu un échange avec un grand commercant venant d’Orient ! Il nous demande de lui donner “1” terrain pour “0” Yen afin d’installer une de ses échoppes. Acceptez-vous ?",
+  "yes": "Oui.",
+  "yes_custom": {
+    "welcome_trader" : 1
+  },
+  "lock": 0,
+  "yes_next_card": "",
+  "no_next_card": ""
+},
+{
+  "kard": "banker_first_deal_first_result",
+  "background": "#ccc",
+  "character": "Carlos Gone - Le Banquier",
+  "conditions": {
+    "welcome_trader" : 1
+  },
+  "image": "daimyo",
+  "no": "Très bien !",
+  "no_custom": {
+    "welcome_trader" : 2
+  },
+  "question": "Le commerçant s’est installé, je vous remercie pour l’aide apportée !",
+  "yes": "D’accord.",
+  "yes_custom": {
+    "welcome_trader" : 2
+  },
+  "lock": 0,
+  "yes_next_card": "",
+  "no_next_card": ""
+},
+{
+  "kard": "banker_first_deal_second_result",
+  "background": "#ccc",
+  "character": "Carlos Gone - Le Banquier",
+  "conditions": {
+    "welcome_trader" : 2
+  },
+  "image": "daimyo",
+  "no": "Attaquez-les !",
+  "no_custom": {},
+  "question": "Le commerçant qui s’est installé il y a peu de temps … Il a engagé des mercenaires et souhaite nous attaquer. Je suis désolé Messire !",
+  "yes": "Donnez leur plus d’argent et faites en sorte qu’ils s’en aillent !",
+  "yes_custom": {},
+  "lock": 0,
+  "yes_next_card": "",
+  "no_next_card": ""
+}
 ]

@@ -65,7 +65,7 @@ export default function AnimatedStyleUpdateExample() {
       conditions[condition] = currentCard.no_custom[condition];
     }
     setConditions(conditions);
-    if (currentCard.no_next_card !== {}) {
+    if (currentCard.no_next_card !== '') {
       setCurrentCard(getCardByName(currentCard.no_next_card, conditions));
     } else {
       setCurrentCard(getCard(conditions));

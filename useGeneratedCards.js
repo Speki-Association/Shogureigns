@@ -35,11 +35,14 @@ export default function useGeneratedCards() {
   // };
 
   const verifyCard = (card, conditions) => {
+    if (card.lock === -1) {
+      return false;
+    }
     for (const condition in card.conditions) {
+      console.log(card.lock === -1);
       if (
-        (card.conditions.hasOwnProperty(condition) &&
-          !conditions.hasOwnProperty(condition)) ||
-        card.lock === -1
+        !conditions.hasOwnProperty(condition) ||
+        card.conditions[condition] > conditions[condition]
       ) {
         return false;
       }
@@ -57,7 +60,7 @@ export default function useGeneratedCards() {
         }
       }
     }
-    return Cards[0];
+    return getCard(conditions);
   };
 
   const decayRound = (conditions) => {
@@ -78,7 +81,6 @@ export default function useGeneratedCards() {
         return Cards[i];
       }
     }
-    return Cards[0];
   };
 
   return {
