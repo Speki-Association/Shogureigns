@@ -39,7 +39,6 @@ export default function useGeneratedCards() {
       return false;
     }
     for (const condition in card.conditions) {
-      console.log(card.lock === -1);
       if (
         !conditions.hasOwnProperty(condition) ||
         card.conditions[condition] > conditions[condition]
