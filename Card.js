@@ -229,12 +229,13 @@ const styles = StyleSheet.create({
     top: '-10%',
     paddingTop: '15%',
     paddingHorizontal: '15%',
-    backgroundColor: 'rgba(0,0,0,0.4)',
+    backgroundColor: 'rgba(0,0,0,0.6)',
     padding: 15,
     zIndex: 10,
   },
   topText: {
     color: '#fff',
+    fontSize: 30,
   },
   textLeft: {
     textAlign: 'right',

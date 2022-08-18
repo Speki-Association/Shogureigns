@@ -20,6 +20,8 @@ const CardPerson = ({image}) => {
         return require('./src/graphic-assets/daimyo.jpg');
       case 'ninja':
         return require('./src/graphic-assets/ninja.jpg');
+      case 'death':
+        return require('./src/graphic-assets/death.jpg');
       default:
         return require('./src/graphic-assets/blank.jpg');
     }

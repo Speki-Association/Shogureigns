@@ -78,7 +78,7 @@
     "background": "#ccc",
     "character": "Amaterasu - Déesse du soleil",
     "conditions": {},
-    "image": "emperor",
+    "image": "death",
     "no": "Non.",
     "no_custom": {
       "death_by_amaterasu_no_ruler": 1
@@ -131,7 +131,7 @@
     "conditions": {
       "death_by_amaterasu_no_ruler": 1
     },
-    "image": "emperor",
+    "image": "death",
     "no": "",
     "no_custom": {},
     "question": "N’étant pas le souverain ou la souveraine attendu. Amaterasu vous infligea la mort part combustion spontanée.",
@@ -915,7 +915,7 @@
     "conditions": {
       "death_by_amaterasu_dont_stop_believin": 1
     },
-    "image": "emperor",
+    "image": "death",
     "no": "",
     "no_custom": {},
     "question": "Pour vôtre sacrilège envers la déesse du soleil. Amaterasu vous infligea la mort part combustion spontanée.",
@@ -987,7 +987,7 @@
     "conditions": {
       "death_by_spanish_inquisition": 1
     },
-    "image": "shogun",
+    "image": "death",
     "no": "",
     "no_custom": {},
     "question": "Pour avoir laisser l’inquisition espagnole monter en puissance dans votre domaine. Ceux-ci ont commencer une rebellion de fervant serviteurs qui vous ont mis à mort.",
