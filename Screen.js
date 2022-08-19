@@ -9,6 +9,8 @@ import StartButton from './StartButton';
 import useGeneratedCards from './useGeneratedCards';
 import {Dimensions} from 'react-native';
 import GeneralStatusBarColor from './GeneralStatusBarColor';
+import database from '@react-native-firebase/database';
+import {firebase} from '@react-native-firebase/database';
 
 export default function AnimatedStyleUpdateExample() {
   const {getCardByName, getCard} = useGeneratedCards();
@@ -21,6 +23,8 @@ export default function AnimatedStyleUpdateExample() {
   const [showCard, setShowCard] = useState(false);
   const [showQuestion, setShowQuestion] = useState(false);
   const [conditions, setConditions] = useState({});
+  const [fb, setfb] = useState(55);
+  console.log('test2');
 
   // TODO refactor those settimeouts
   const showNextCard = (timeout) => {
@@ -61,6 +65,18 @@ export default function AnimatedStyleUpdateExample() {
   };
 
   const onChooseRightAnswer = () => {
+    console.log('test fb: ' + fb);
+    firebase
+      .app()
+      .database(
+        'https://shogureigns-default-rtdb.europe-west1.firebasedatabase.app/',
+      )
+      .ref('/Users/123')
+      .set({
+        name: 'Ada Lovelace',
+        age: 31,
+      })
+      .then(() => console.log('Data set.'));
     for (const condition in currentCard.no_custom) {
       conditions[condition] = currentCard.no_custom[condition];
     }

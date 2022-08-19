@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "745391622309",
+    "project_id": "shogureigns",
+    "storage_bucket": "shogureigns.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745391622309:android:b629ee4e76fd896940654c",
+        "android_client_info": {
+          "package_name": "com.reanimated2playground"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745391622309-3lpnjbq7bqt11jio9iohmctnn72sv8j9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.reanimated2playground",
+            "certificate_hash": "4af75aeab88f9e69aad0e85be46a60ef80b28048"
+          }
+        },
+        {
+          "client_id": "745391622309-jm2h4k1rq9b8q5jm0n834p346lsp44vf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8H7y3XkCgKDwY-qNG9i7Vhs2yAYbAIks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745391622309-jm2h4k1rq9b8q5jm0n834p346lsp44vf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
