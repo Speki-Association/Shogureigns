@@ -4,7 +4,7 @@
     "background": "#ccc",
     "character": "Amaterasu - Déesse du soleil",
     "conditions": {},
-    "image": "emperor",
+    "image": "amaterasu",
     "no": "Non.",
     "no_custom": {
       "player_is_woman": 1
@@ -23,7 +23,7 @@
     "background": "#ccc",
     "character": "Amaterasu - Déesse du soleil",
     "conditions": {},
-    "image": "emperor",
+    "image": "amaterasu",
     "no": "Non.",
     "no_custom": {
       "player_is_woman": 1
@@ -42,7 +42,7 @@
     "background": "#ccc",
     "character": "Amaterasu - Déesse du soleil",
     "conditions": {},
-    "image": "emperor",
+    "image": "amaterasu",
     "no": "Je vais essayer de faire de mon mieux….",
     "no_custom": {
       "end_rule_explanation": 1
@@ -63,7 +63,7 @@
     "conditions": {
       "player_is_woman": 1
     },
-    "image": "emperor",
+    "image": "amaterasu",
     "no": "Ok.",
     "no_custom": {},
     "question": "Très bien jeune Reine du clan “Chū”. (Dit Chew) A toi de jouer maintenant, tu verras tu comprendra bien assez vite ton travail !",
@@ -78,7 +78,7 @@
     "background": "#ccc",
     "character": "Amaterasu - Déesse du soleil",
     "conditions": {},
-    "image": "death",
+    "image": "amaterasu",
     "no": "Non.",
     "no_custom": {
       "death_by_amaterasu_no_ruler": 1
@@ -97,7 +97,7 @@
     "conditions": {
       "player_is_man": 1
     },
-    "image": "emperor",
+    "image": "amaterasu",
     "no": "Ok.",
     "no_custom": {},
     "question": "Très bien jeune Roi du clan “Chū”.  (Dit Chew) A toi de jouer maintenant, tu verras tu comprendra bien assez vite ton travail !",
@@ -114,7 +114,7 @@
     "conditions": {
       "end_rule_explanation": 1
     },
-    "image": "emperor",
+    "image": "amaterasu",
     "no": "Ok.",
     "no_custom": {},
     "question": "La déesse vous regarde en silence puis disparaît dans un bain de lumière. Vous ouvrez les yeux, assis sur votre trône.",
