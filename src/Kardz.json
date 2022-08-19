@@ -524,7 +524,7 @@
     "background": "#ccc",
     "character": "Kradouk - Le Mineur",
     "conditions": {},
-    "image": "peasant",
+    "image": "miner",
     "no": "D’accord.",
     "no_custom": {
       "first_meeting_miner": 1
@@ -545,7 +545,7 @@
     "conditions": {
       "first_meeting_miner": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Donnez-les au peuple, je vous prie !",
     "no_custom": {},
     "question": "Monsieur, monsieur, monsieur ! On a trouvé des petites pépites dans la mine ! Voilà pour vous !",
@@ -562,7 +562,7 @@
     "conditions": {
       "first_meeting_miner": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Jetez-moi ça à la poubelle !",
     "no_custom": {
       "throw_geta": 1
@@ -583,7 +583,7 @@
     "conditions": {
       "get_geta": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Très bien, voyons ce qu’elles peuvent faire !",
     "no_custom": {},
     "question": "Monsieur ! La paire de Geta brille dans vos mains, je pense qu’elles sont magiques ! (True Sight sur les prochaines propositions)",
@@ -600,7 +600,7 @@
     "conditions": {
       "throw_geta": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Très bien, voyons ce qu’elles peuvent faire !Ah bah bravo Kradouk pour la paire de Geta !",
     "no_custom": {},
     "question": "Monsieur ! Kradouk est devenu magicien ! Regardez je peux faire du feu avec mes mains ! Oh … Non ! Je les ai brulées !",
@@ -617,7 +617,7 @@
     "conditions": {
       "first_meeting_miner": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Non.",
     "no_custom": {
       "dont_dig_submarine_mine": 1
@@ -638,7 +638,7 @@
     "conditions": {
       "dig_submarine_mine": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Partagez les ressources avec le peuple et l’armée !",
     "no_custom": {},
     "question": "Monsieur ! C’était une mine sous-marine, on a récupéré beaucoup de Jade ! Vous êtes riche ! ",
@@ -655,7 +655,7 @@
     "conditions": {
       "dont_dig_submarine_mine": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Oh …",
     "no_custom": {},
     "question": "Monsieur ! C’était une mine sous-marine, on a récupéré beaucoup de Jade ! Vous êtes riche ! ",
@@ -672,7 +672,7 @@
     "conditions": {
       "first_meeting_miner": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Laissez-les, ils pourraient être hantés !",
     "no_custom": {
       "dont_dig_cemetery": 1
@@ -693,7 +693,7 @@
     "conditions": {
       "dig_cemetery": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Des fantômes … Vraiment ?",
     "no_custom": {
       "dont_call_army": 1
@@ -712,7 +712,7 @@
     "conditions": {
       "dont_dig_cemetery": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Tant mieux, n’entrez plus jamais là dedans !",
     "no_custom": {},
     "question": "Monsieur ! Vous aviez raison ! Les esprits se sont apaisés en retournant dans leur cimetière !",
@@ -729,7 +729,7 @@
     "conditions": {
       "dont_call_army": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Ce n’est vraiment pas dr… AAaaAaAaaAAAAAH !!!",
     "no_custom": {},
     "question": "Monsieur ! Il y en a un juste derrière vous !",
@@ -746,7 +746,7 @@
     "conditions": {
       "first_meeting_miner": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Non.",
     "no_custom": {
       "dont_buy_tools": 1
@@ -767,7 +767,7 @@
     "conditions": {
       "buy_tools": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Non merci.",
     "no_custom": {},
     "question": "Monsieur ! C’est merveilleux ! Voici tout ce qu’on a récolté ! D’autres outils existent, voulez-vous les acheter aussi ?",
@@ -786,7 +786,7 @@
     "conditions": {
       "dont_buy_tools": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Non …",
     "no_custom": {},
     "question": "Monsieur ! Les mineurs font grève et veulent des augmentations pour travailler sans matériel !",
@@ -803,7 +803,7 @@
     "conditions": {
       "buy_fake_tools": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Et bien dommage …",
     "no_custom": {},
     "question": "Monsieur ! Les seconds outils étaient mensongers ! Ils ne fonctionnent pas et les artisans refusent de nous les rembourser !",
@@ -820,7 +820,7 @@
     "conditions": {
       "first_meeting_miner": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Sortez-moi ça d’ici !",
     "no_custom": {
       "throw_box": 1
@@ -841,7 +841,7 @@
     "conditions": {
       "take_box": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Sortez ça de cette pièce !",
     "no_custom": {
       "throw_box": 1
@@ -862,7 +862,7 @@
     "conditions": {
       "open_box": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "…",
     "no_custom": {},
     "question": "Monsieur ! C’est quoi ce “Tic Tic” ? (La bombe explose et tout le monde est blessé)",
@@ -879,7 +879,7 @@
     "conditions": {
       "throw_box": 1
     },
-    "image": "peasant",
+    "image": "miner",
     "no": "Ouf … C’était de la chance",
     "no_custom": {},
     "question": "Monsieur ! C’était une bombe ! Mes félicitations pour l’avoir présenti !",
