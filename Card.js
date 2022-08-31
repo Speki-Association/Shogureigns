@@ -21,10 +21,10 @@ import CardPerson from './CardPerson';
 const Card = ({
   onChooseLeftAnswer,
   onChooseRightAnswer,
-  onChooseTopAnswer,
+  onChooseBottomAnswer,
   leftText,
   rightText,
-  TopText,
+  BottomText,
   image,
   backgroundColor,
 }) => {
@@ -60,11 +60,11 @@ const Card = ({
       } else {
         x.value = withSpring(0, {velocity: event.velocityX});
       }
-      if (tossY < -150 && String(image).includes('geisha')) {
+      if (tossY > 150 && String(image).includes('geisha')) {
         y.value = withSpring(-400, {
           velocity: event.velocityX,
         });
-        runOnJS(onChooseTopAnswer)();
+        runOnJS(onChooseBottomAnswer)();
       } else {
         y.value = withSpring(0, {velocity: event.velocityY});
       }
@@ -184,7 +184,7 @@ const Card = ({
     };
   });
 
-  const animatedTopTextWrapper = useAnimatedStyle(() => {
+  const animatedBottomTextWrapper = useAnimatedStyle(() => {
     return {
       opacity: interpolate(x.value, [-15, -70], [0, 1], Extrapolate.CLAMP),
       transform: [
@@ -222,9 +222,9 @@ const Card = ({
                 </Text>
               </Animated.View>
               <Animated.View
-                style={[animatedTopTextWrapper, styles.topTextWrapper]}>
-                <Text style={[styles.topText, styles.textTop]}>
-                  {TopText}
+                style={[animatedBottomTextWrapper, styles.topTextWrapper]}>
+                <Text style={[styles.topText, styles.textBottom]}>
+                  {BottomText}
                 </Text>
               </Animated.View>
               <CardPerson image={image} />

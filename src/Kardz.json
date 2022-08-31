@@ -4,7 +4,7 @@
     "background": "#ccc",
     "character": "Amaterasu - Déesse du soleil",
     "conditions": {},
-    "image": "emperor",
+    "image": "amaterasu",
     "no": "Non.",
     "no_custom": {
       "death_by_amaterasu_no_ruler": 1
@@ -1412,8 +1412,8 @@
     "yes_custom": {
       "first_meeting_geisha": 1
     },
-    "top": "Très bien, je vous remercie",
-    "top_custom" : {
+    "bottom": "Très bien, je vous remercie",
+    "bottom_custom" : {
       "first_meeting_geisha": 1
     },
     "lock": 0,

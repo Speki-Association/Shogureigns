@@ -47,7 +47,7 @@ export default function AnimatedStyleUpdateExample() {
     showNextCard(2500);
   };
 
-  const onChooseLeftAnswer = () => {
+  const onChooseRightAnswer = () => {
     for (const condition in currentCard.yes_custom) {
       conditions[condition] = currentCard.yes_custom[condition];
     }
@@ -60,7 +60,7 @@ export default function AnimatedStyleUpdateExample() {
     createNewCard();
   };
 
-  const onChooseRightAnswer = () => {
+  const onChooseLeftAnswer = () => {
     for (const condition in currentCard.no_custom) {
       conditions[condition] = currentCard.no_custom[condition];
     }
@@ -73,7 +73,7 @@ export default function AnimatedStyleUpdateExample() {
     createNewCard();
   };
 
-  const onChooseTopAnswer = () => {
+  const onChooseBottomAnswer = () => {
     for (const condition in currentCard.no_custom) {
       conditions[condition] = currentCard.no_custom[condition];
     }
@@ -119,10 +119,10 @@ export default function AnimatedStyleUpdateExample() {
             <Card
               onChooseLeftAnswer={onChooseLeftAnswer}
               onChooseRightAnswer={onChooseRightAnswer}
-              onChooseTopAnswer={onChooseTopAnswer}
-              leftText={currentCard.yes}
-              rightText={currentCard.no}
-              TopText={currentCard.top}
+              onChooseBottomAnswer={onChooseBottomAnswer}
+              leftText={currentCard.no}
+              rightText={currentCard.yes}
+              BottomText={currentCard.bottom}
               image={currentCard.image}
               backgroundColor={currentCard.background}
             />
@@ -157,8 +157,8 @@ export default function AnimatedStyleUpdateExample() {
           <Card
             onChooseLeftAnswer={onChooseLeftAnswer}
             onChooseRightAnswer={onChooseRightAnswer}
-            leftText={currentCard.yes}
-            rightText={currentCard.no}
+            leftText={currentCard.no}
+            rightText={currentCard.yes}
             image={currentCard.image}
             backgroundColor={currentCard.background}
           />
