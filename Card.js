@@ -47,26 +47,27 @@ const Card = ({
     onEnd: (event) => {
       const tossX = event.translationX + 0.2 * event.velocityX;
       const tossY = event.translationY + 0.2 * event.velocityY;
-      if (tossX > 150) {
+      if (tossX > 150 && tossY < 150 && tossY > -150) {
         x.value = withSpring(400, {
           velocity: event.velocityX,
         });
         runOnJS(onChooseRightAnswer)();
-      } else if (tossX < -150) {
+      } else if (tossX < -150 && tossY < 150 && tossY > -150) {
         x.value = withSpring(-400, {
           velocity: event.velocityX,
         });
         runOnJS(onChooseLeftAnswer)();
-      } else {
-        x.value = withSpring(0, {velocity: event.velocityX});
-      }
-      if (tossY > 150 && String(image).includes('geisha')) {
-        y.value = withSpring(-400, {
-          velocity: event.velocityX,
+      } else if (
+        (tossY > 150 && tossX < 150 && image === 'geisha') ||
+        (tossY > 150 && tossX > -150 && image === 'geisha')
+      ) {
+        y.value = withSpring(400, {
+          velocity: event.velocityY,
         });
         runOnJS(onChooseBottomAnswer)();
       } else {
         y.value = withSpring(0, {velocity: event.velocityY});
+        x.value = withSpring(0, {velocity: event.velocityX});
       }
     },
   });
@@ -154,7 +155,10 @@ const Card = ({
 
   const animatedRightTextWrapper = useAnimatedStyle(() => {
     return {
-      opacity: interpolate(x.value, [15, 70], [0, 1], Extrapolate.CLAMP),
+      opacity:
+        interpolate(x.value, [25, 70], [0, 1], Extrapolate.CLAMP) -
+        interpolate(y.value, [-25, -70], [0, 1], Extrapolate.CLAMP) -
+        interpolate(y.value, [25, 70], [0, 1], Extrapolate.CLAMP),
       transform: [
         {
           rotateZ: `${interpolate(
@@ -168,31 +172,36 @@ const Card = ({
     };
   });
 
+  const animatedBottomTextWrapper = useAnimatedStyle(() => {
+    return {
+      opacity:
+        interpolate(y.value, [25, 70], [0, 1], Extrapolate.CLAMP) -
+        interpolate(x.value, [-25, -70], [0, 1], Extrapolate.CLAMP) -
+        interpolate(x.value, [25, 70], [0, 1], Extrapolate.CLAMP),
+    };
+  });
+
+  const animatedTopTextWrapper = useAnimatedStyle(() => {
+    return {
+      opacity:
+        interpolate(y.value, [-25, -70], [0, 1], Extrapolate.CLAMP) -
+        interpolate(x.value, [-25, -70], [0, 1], Extrapolate.CLAMP) -
+        interpolate(x.value, [25, 70], [0, 1], Extrapolate.CLAMP),
+    };
+  });
+
   const animatedLeftTextWrapper = useAnimatedStyle(() => {
     return {
-      opacity: interpolate(x.value, [-15, -70], [0, 1], Extrapolate.CLAMP),
+      opacity:
+        interpolate(x.value, [-25, -70], [0, 1], Extrapolate.CLAMP) -
+        interpolate(y.value, [-25, -70], [0, 1], Extrapolate.CLAMP) -
+        interpolate(y.value, [25, 70], [0, 1], Extrapolate.CLAMP),
       transform: [
         {
           rotateZ: `${interpolate(
             x.value,
             [-50, 0],
             [0.03, 0],
-            Extrapolate.EXTEND,
-          )}rad`,
-        },
-      ],
-    };
-  });
-
-  const animatedBottomTextWrapper = useAnimatedStyle(() => {
-    return {
-      opacity: interpolate(y.value, [15, 70], [0, 1], Extrapolate.CLAMP),
-      transform: [
-        {
-          rotateZ: `${interpolate(
-            y.value,
-            [0, 50],
-            [0, 0],
             Extrapolate.EXTEND,
           )}rad`,
         },
@@ -221,12 +230,14 @@ const Card = ({
                   {leftText}
                 </Text>
               </Animated.View>
-              <Animated.View
-                style={[animatedBottomTextWrapper, styles.topTextWrapper]}>
-                <Text style={[styles.topText, styles.textBottom]}>
-                  {BottomText}
-                </Text>
-              </Animated.View>
+              {image === 'geisha' ? (
+                <Animated.View
+                  style={[animatedBottomTextWrapper, styles.topTextWrapper]}>
+                  <Text style={[styles.topText, styles.textBottom]}>
+                    {BottomText}
+                  </Text>
+                </Animated.View>
+              ) : null}
               <CardPerson image={image} />
               <Animated.View style={[animatedFrontShadow, styles.shadow]} />
             </Animated.View>
