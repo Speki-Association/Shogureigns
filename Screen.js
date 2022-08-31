@@ -1,4 +1,4 @@
-import {View, StyleSheet, ImageBackground, Image} from 'react-native';
+import {View, StyleSheet, ImageBackground} from 'react-native';
 import React, {useState} from 'react';
 import Card from './Card';
 import PlaceholderBackCards from './PlaceholderBackCards';
@@ -7,7 +7,6 @@ import Question from './Question';
 import PlaceholderBackStaticCard from './PlaceholderBackStaticCard';
 import StartButton from './StartButton';
 import useGeneratedCards from './useGeneratedCards';
-import {Dimensions} from 'react-native';
 import GeneralStatusBarColor from './GeneralStatusBarColor';
 
 export default function AnimatedStyleUpdateExample() {

@@ -1,5 +1,3 @@
-import Card from './Card';
-
 export default function useGeneratedCards() {
   function shuffle(array) {
     let currentIndex = array.length,
