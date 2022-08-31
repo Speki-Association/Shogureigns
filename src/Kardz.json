@@ -894,12 +894,12 @@
     "background": "#ccc",
     "character": "Moine",
     "conditions": {},
-    "image": "shogun",
+    "image": "shaman",
     "no": "Désolé, mais la seul personne ne qui je crois c’est moi-même. Je n’ai pas besoin de vous!",
     "no_custom": {
       "death_by_amaterasu_dont_stop_believin": 1
     },
-    "question": "Bien le bonjour mon seigneur. Je me nomme Ten et je suis le prêtre shintoiste qui dirige le sanctuaire du soleil. Je serais ravi de vous conseiller pour toute missives religieuse ou spirituelles.",
+    "question": "Bien le bonjour mon seigneur. Je me nomme Ten et je suis la prêtresse shintoiste qui dirige le sanctuaire du soleil. Je serais ravi de vous conseiller pour toute missives religieuse ou spirituelles.",
     "yes": "Ravi de vous rencontrer!",
     "yes_custom": {
       "first_meeting_monk": 1
@@ -932,7 +932,7 @@
     "conditions": {
       "first_meeting_monk": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Non.",
     "no_custom": {},
     "question": "Mon seigneur. Nous manquons de prestresses Miko pour nous aider au sanctuaire. Pouvez-vous financer une campagne de recrutement?",
@@ -949,7 +949,7 @@
     "conditions": {
       "first_meeting_monk": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Non.",
     "no_custom": {},
     "question": "Mon seigneur. Des hommes religieux habillés de rouges en provenance d’un pays appelé “l’Espagne” viennent d’arriver avec de l’or en cadeau. Voulez-vous les accepter dans le pays?",
@@ -968,7 +968,7 @@
     "conditions": {
       "spanish_inquisition": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Nous avons besoin de brûler les sorcière du pays !",
     "no_custom": {
       "death_by_spanish_inquisition": 1
@@ -1004,7 +1004,7 @@
     "conditions": {
       "first_meeting_monk": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Non.",
     "no_custom": {},
     "question": "Mon seigneur. Nous avons besoin d’agrandir les infrastructures du sanctuaire. Pouvez-vous financer les travaux?",
@@ -1023,7 +1023,7 @@
     "conditions": {
       "shrine": 2
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Non.",
     "no_custom": {},
     "question": "Mon seigneur. Nous avons besoin d’agrandir à nouveau les infrastructures du sanctuaire pour acceuillir plus de suivants. Pouvez-vous financer les travaux?",
@@ -1042,7 +1042,7 @@
     "conditions": {
       "shrine": 3
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Non! Construisez des infrastructure pour les accomoder au mieux!",
     "no_custom": {
       "shrine": 4
@@ -1061,7 +1061,7 @@
     "conditions": {
       "shrine": 4
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Non.",
     "no_custom": {},
     "question": "Mon seigneur. De nombreux visiteurs viennent du monde entier pour visiter notre magnifique sanctuaire. Voulez-vous faire payer les droits d’entrée aux visiteurs? ",
@@ -1078,7 +1078,7 @@
     "conditions": {
       "first_meeting_monk": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Non merci.",
     "no_custom": {},
     "question": "Mon seigneur. Un gaijin avec des cheveux long et des trou dans ses mains vous défie au jeu de carte “Mahjonc, le rassemblement”. Voulez-vous organiser un match public ?",
@@ -1095,7 +1095,7 @@
     "conditions": {
       "first_meeting_monk": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Les fantômes ça existe pas ! ",
     "no_custom": {},
     "question": "Mon seigneur, de nombreux Yokai viennent hanter la capitale. Nous devons les repousser ! ",
@@ -1114,7 +1114,7 @@
     "conditions": {
       "tanukis_are_hungry": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Eradiquer la vermine !",
     "no_custom": {},
     "question": "Mon seigneur, les exorcistes ont découvert que c’était une bande de tanuki affamés et non des Yokai derrières les attaques de la Capitale.",
@@ -1131,7 +1131,7 @@
     "conditions": {
       "first_meeting_monk": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Appeler S.O.S Yokai",
     "no_custom": {},
     "question": "Mon seigneur, Une femme dénudé se nommant Gozer est apparu au milieu du sanctuaire. Elle nous demande de choisir la forme du destructeur du monde!",
@@ -1150,7 +1150,7 @@
     "conditions": {
       "death_by_pikachu": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "",
     "no_custom": {},
     "question": "La femme invoqua un pika electrique de la taille d’une montagne. Celui-ci écrasa et electrocuta tout le royaume.",
@@ -1167,7 +1167,7 @@
     "conditions": {
       "first_meeting_monk": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Non.",
     "no_custom": {},
     "question": "Mon seigneur,  Un temple à été saccager, que justice soit- faîtes ! ",
@@ -1184,7 +1184,7 @@
     "conditions": {
       "first_meeting_monk": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Faire appel au Kisatsu-tai.",
     "no_custom": {},
     "question": "Des attaques de Oni, sont de plus en plus fréquent à la tombé de la nuit.",
@@ -1201,7 +1201,7 @@
     "conditions": {
       "first_meeting_monk": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Non.",
     "no_custom": {},
     "question": "Mon seigneur, nous avons besoin de financement pour organiser le festival du soleil. Pouvez-vous nous aider?",
@@ -1218,7 +1218,7 @@
     "conditions": {
       "first_meeting_monk": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Non.",
     "no_custom": {},
     "question": "Mon seigneur, nous avons besoin de diffuser les enseignements shintoiste. Pouvez-vous nous affretter des escortes militaires?",
@@ -1235,7 +1235,7 @@
     "conditions": {
       "first_meeting_monk": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Des coco popsu … en plus ça crépite.",
     "no_custom": {},
     "question": "Mon seigneur, qu’est-ce qui est petit et marron?",
@@ -1252,7 +1252,7 @@
     "conditions": {
       "first_meeting_monk": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Non.",
     "no_custom": {},
     "question": "Mon seigneur, un jeune moine à concocté un elixir de vie à base de 130 plantes médicinal. Voulez-vous le goûter avec moi?",
@@ -1271,7 +1271,7 @@
     "conditions": {
       "monk_chartreuse": 2
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Non c’est assez !",
     "no_custom": {},
     "question": "Wesh mon seigneur * hips *, t’en veux encore?  * hips * ",
@@ -1290,7 +1290,7 @@
     "conditions": {
       "message_ex": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Ok.",
     "no_custom": {
       "monk_chartreuse": 3
@@ -1311,7 +1311,7 @@
     "conditions": {
       "monk_chartreuse": 3
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Noooooon !",
     "no_custom": {},
     "question": "Brooooo, * hips * , encore une petite bolinette ? C’est un petit bol! * hips *",
@@ -1330,7 +1330,7 @@
     "conditions": {
       "southeast_war": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "Ok.",
     "no_custom": {
       "monk_chartreuse": 4
@@ -1351,7 +1351,7 @@
     "conditions": {
       "monk_chartreuse": 4
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "* vomir *",
     "no_custom": {},
     "question": "Du sake, des geisha et des high ball nom d’amaterasu, * hips * un koto pour valser tant qu’on veut … ",
@@ -1370,7 +1370,7 @@
     "conditions": {
       "death_by_drowning_koikoi": 1
     },
-    "image": "shogun",
+    "image": "shaman",
     "no": "",
     "no_custom": {},
     "question": "En voulant rentrer à votre palais totalement soul, vous trébucher dans le bassin aux poisson koikoi. Vous mourrez noyer ainsi.",
