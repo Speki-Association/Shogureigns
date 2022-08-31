@@ -20,8 +20,10 @@ import CardReverse from './CardReverse';
 const Card = ({
   onChooseLeftAnswer,
   onChooseRightAnswer,
+  onChooseTopAnswer,
   leftText,
   rightText,
+  TopText,
   image,
   backgroundColor,
 }) => {
@@ -64,7 +66,18 @@ const Card = ({
       } else {
         x.value = withSpring(0, cardSpringConfig);
       }
-      y.value = withSpring(0, cardSpringConfig);
+      if (
+        (event.velocityY < -500 || event.translationY < -150) &&
+        String(image).includes('geisha')
+      ) {
+        y.value = withSpring(-400, {
+          velocity: event.velocityY,
+        });
+        textOpacityMultiplier.value = withTiming(0, {duration: 100});
+        runOnJS(onChooseTopAnswer)();
+      } else {
+        y.value = withSpring(0, cardSpringConfig);
+      }
     },
   });
 
@@ -182,6 +195,24 @@ const Card = ({
     };
   });
 
+  const animatedTopTextWrapper = useAnimatedStyle(() => {
+    return {
+      opacity:
+        textOpacityMultiplier.value *
+        interpolate(x.value, [-15, -70], [0, 1], Extrapolate.CLAMP),
+      transform: [
+        {
+          rotateZ: interpolate(
+            x.value,
+            [-50, 0],
+            [0.03, 0],
+            Extrapolate.EXTEND,
+          ),
+        },
+      ],
+    };
+  });
+
   return (
     <>
       <View style={[{opacity: showCard ? 1 : 0}, styles.cardWrapper]}>
@@ -203,6 +234,12 @@ const Card = ({
                 style={[animatedLeftTextWrapper, styles.topTextWrapper]}>
                 <Animated.Text style={[styles.topText, styles.textLeft]}>
                   {leftText}
+                </Animated.Text>
+              </Animated.View>
+              <Animated.View
+                style={[animatedTopTextWrapper, styles.topTextWrapper]}>
+                <Animated.Text style={[styles.topText, styles.textTop]}>
+                  {TopText}
                 </Animated.Text>
               </Animated.View>
               <CardPerson image={image} />

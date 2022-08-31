@@ -11,7 +11,7 @@ import {Dimensions} from 'react-native';
 import GeneralStatusBarColor from './GeneralStatusBarColor';
 
 export default function AnimatedStyleUpdateExample() {
-  const {getCardByName, getCard} = useGeneratedCards();
+  const {getCardByName, getCard, currentCardIsGeisha} = useGeneratedCards();
   const [currentCard, setCurrentCard] = useState({});
   // const [currentMood, setCurrentMood] = useState({happy: [], sad: []});
 
@@ -73,6 +73,15 @@ export default function AnimatedStyleUpdateExample() {
     createNewCard();
   };
 
+  const onChooseTopAnswer = () => {
+    for (const condition in currentCard.no_custom) {
+      conditions[condition] = currentCard.no_custom[condition];
+    }
+    setConditions(conditions);
+    setCurrentCard(getCard(conditions));
+    createNewCard();
+  };
+
   const createNewCard = (card) => {
     setShowQuestion(false);
     setTimeout(() => {
@@ -81,6 +90,48 @@ export default function AnimatedStyleUpdateExample() {
     showNextCard(700);
   };
 
+  if (currentCardIsGeisha(currentCard)) {
+    return (
+      <View style={styles.wrapper}>
+        <GeneralStatusBarColor
+          backgroundColor="#FAFAFA"
+          barStyle="dark-content"
+        />
+        <View style={styles.topWrapper}>
+          <ImageBackground
+            source={require('./src/graphic-assets/topWrapperBg.png')}
+            resizeMode="cover"
+            style={styles.imageBG}
+          />
+        </View>
+
+        <View style={styles.questionWrapper}>
+          <Question
+            question={currentCard.question}
+            showQuestion={showQuestion}
+          />
+        </View>
+        <View style={styles.cardWrapper}>
+          {showStartButton && <StartButton onPress={onStartGame} />}
+          {showAnimatedReverseCard && <PlaceholderBackCards />}
+          {showReverseCard && <PlaceholderBackStaticCard />}
+          {showCard && (
+            <Card
+              onChooseLeftAnswer={onChooseLeftAnswer}
+              onChooseRightAnswer={onChooseRightAnswer}
+              onChooseTopAnswer={onChooseTopAnswer}
+              leftText={currentCard.yes}
+              rightText={currentCard.no}
+              TopText={currentCard.top}
+              image={currentCard.image}
+              backgroundColor={currentCard.background}
+            />
+          )}
+        </View>
+        <View style={styles.nameWrapper} />
+      </View>
+    );
+  }
   return (
     <View style={styles.wrapper}>
       <GeneralStatusBarColor

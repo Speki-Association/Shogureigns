@@ -49,6 +49,13 @@ export default function useGeneratedCards() {
     return true;
   };
 
+  const currentCardIsGeisha = (card) => {
+    if (card) {
+      return String(card.character).includes('Geisha');
+    }
+    return false;
+  };
+
   const getCardByName = (name, conditions) => {
     decayRound(conditions);
     for (let i = 0; i < Cards.length; i++) {
@@ -86,5 +93,6 @@ export default function useGeneratedCards() {
     Cards,
     getCardByName,
     getCard,
+    currentCardIsGeisha,
   };
 }

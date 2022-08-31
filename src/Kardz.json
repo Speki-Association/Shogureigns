@@ -1,5 +1,22 @@
 [
   {
+    "kard": "amaterasu_first_contact",
+    "background": "#ccc",
+    "character": "Amaterasu - Déesse du soleil",
+    "conditions": {},
+    "image": "emperor",
+    "no": "Non.",
+    "no_custom": {
+      "death_by_amaterasu_no_ruler": 1
+    },
+    "question": "Bonjour toi, es-tu la nouvelle personne qui va gouverner ce clan ? ",
+    "yes": "Oui.",
+    "yes_custom": {},
+    "lock": 0,
+    "yes_next_card": "amaterasu_sex_choice",
+    "no_next_card": "death_by_amaterasu_no_ruler"
+  },
+  {
     "kard": "amaterasu_sex_choice",
     "background": "#ccc",
     "character": "Amaterasu - Déesse du soleil",
@@ -1376,6 +1393,29 @@
     "question": "En voulant rentrer à votre palais totalement soul, vous trébucher dans le bassin aux poisson koikoi. Vous mourrez noyer ainsi.",
     "yes": "",
     "yes_custom": {},
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "geisha_first_contact",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {},
+    "image": "geisha",
+    "no": "Tout le plaisir me revient.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Bonjour messire, ravi de vous connaître! Je suis Mineko, je serais votre plus intime confidente, donc n’ayez aucun secret et soyez honnête avec moi!",
+    "yes": "Enchanté! ",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "top": "Très bien, je vous remercie",
+    "top_custom" : {
+      "first_meeting_geisha": 1
+    },
     "lock": 0,
     "yes_next_card": "",
     "no_next_card": ""
