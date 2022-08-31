@@ -199,15 +199,10 @@ const Card = ({
     return {
       opacity:
         textOpacityMultiplier.value *
-        interpolate(x.value, [-15, -70], [0, 1], Extrapolate.CLAMP),
+        interpolate(y.value, [15, 70], [0, 1], Extrapolate.CLAMP),
       transform: [
         {
-          rotateZ: interpolate(
-            x.value,
-            [-50, 0],
-            [0.03, 0],
-            Extrapolate.EXTEND,
-          ),
+          rotateZ: interpolate(y.value, [0, 50], [0, 0], Extrapolate.EXTEND),
         },
       ],
     };
