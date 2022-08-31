@@ -189,7 +189,12 @@ const Card = ({
       opacity: interpolate(y.value, [15, 70], [0, 1], Extrapolate.CLAMP),
       transform: [
         {
-          rotateZ: interpolate(y.value, [0, 50], [0, 0], Extrapolate.EXTEND),
+          rotateZ: `${interpolate(
+            y.value,
+            [0, 50],
+            [0, 0],
+            Extrapolate.EXTEND,
+          )}rad`,
         },
       ],
     };
