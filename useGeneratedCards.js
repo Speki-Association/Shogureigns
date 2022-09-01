@@ -54,12 +54,47 @@ export default function useGeneratedCards() {
     return false;
   };
 
+  const currentCardIsDeath = (card) => {
+    if (card) {
+      return String(card.kard).includes('death');
+    }
+    return false;
+  };
+
+  const currentCardIsAmaterasuFC = (card) => {
+    if (card) {
+      return card.kard === 'amaterasu_first_contact';
+    }
+    return false;
+  };
+
+  const lockAmaterasu = () => {
+    for (let i = 0; i < Cards.length; i++) {
+      if (Cards[i].kard === 'amaterasu_first_contact') {
+        Cards[i].lock = -1;
+      }
+    }
+  };
+
+  const getFinal = () => {
+    for (let i = 0; i < Cards.length; i++) {
+      if (Cards[i].kard === 'final') {
+        return Cards[i];
+      }
+    }
+  };
+
   const getCardByName = (name, conditions) => {
     decayRound(conditions);
     for (let i = 0; i < Cards.length; i++) {
       if (Cards[i].kard === name) {
         if (verifyCard(Cards[i], conditions)) {
-          Cards[i].lock = -1;
+          if (
+            !currentCardIsDeath(Cards[i]) &&
+            !currentCardIsAmaterasuFC(Cards[i])
+          ) {
+            Cards[i].lock = -1;
+          }
           return Cards[i];
         }
       }
@@ -81,7 +116,9 @@ export default function useGeneratedCards() {
     decayRound(conditions);
     for (let i = 0; i < Cards.length; i++) {
       if (verifyCard(Cards[i], conditions)) {
-        Cards[i].lock = -1;
+        if (!currentCardIsDeath(Cards[i])) {
+          Cards[i].lock = -1;
+        }
         return Cards[i];
       }
     }
@@ -92,5 +129,8 @@ export default function useGeneratedCards() {
     getCardByName,
     getCard,
     currentCardIsGeisha,
+    currentCardIsDeath,
+    lockAmaterasu,
+    getFinal,
   };
 }

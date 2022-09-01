@@ -8,9 +8,17 @@ import PlaceholderBackStaticCard from './PlaceholderBackStaticCard';
 import StartButton from './StartButton';
 import useGeneratedCards from './useGeneratedCards';
 import GeneralStatusBarColor from './GeneralStatusBarColor';
+import { cond } from 'react-native-reanimated';
 
 export default function AnimatedStyleUpdateExample() {
-  const {getCardByName, getCard, currentCardIsGeisha} = useGeneratedCards();
+  const {
+    getCardByName,
+    getCard,
+    currentCardIsGeisha,
+    currentCardIsDeath,
+    lockAmaterasu,
+    getFinal,
+  } = useGeneratedCards();
   const [currentCard, setCurrentCard] = useState({});
   // const [currentMood, setCurrentMood] = useState({happy: [], sad: []});
 
@@ -47,6 +55,9 @@ export default function AnimatedStyleUpdateExample() {
   };
 
   const onChooseRightAnswer = () => {
+    if (currentCard.kard === 'amaterasu_first_contact') {
+      lockAmaterasu();
+    }
     for (const condition in currentCard.yes_custom) {
       conditions[condition] = currentCard.yes_custom[condition];
     }
@@ -55,6 +66,14 @@ export default function AnimatedStyleUpdateExample() {
       setCurrentCard(getCardByName(currentCard.yes_next_card, conditions));
     } else {
       setCurrentCard(getCard(conditions));
+    }
+    if (currentCardIsDeath(currentCard)) {
+      delete conditions[currentCard.kard];
+      setConditions(conditions);
+    }
+    console.log(currentCard);
+    if (typeof currentCard === 'undefined') {
+      setCurrentCard(getFinal());
     }
     createNewCard();
   };
@@ -69,6 +88,13 @@ export default function AnimatedStyleUpdateExample() {
     } else {
       setCurrentCard(getCard(conditions));
     }
+    if (currentCardIsDeath(currentCard)) {
+      delete conditions[currentCard.kard];
+      setConditions(conditions);
+    }
+    if (typeof currentCard === 'undefined') {
+      setCurrentCard(getFinal());
+    }
     createNewCard();
   };
 
@@ -78,6 +104,13 @@ export default function AnimatedStyleUpdateExample() {
     }
     setConditions(conditions);
     setCurrentCard(getCard(conditions));
+    if (currentCardIsDeath(currentCard)) {
+      delete conditions[currentCard.kard];
+      setConditions(conditions);
+    }
+    if (typeof currentCard === 'undefined') {
+      setCurrentCard(getFinal());
+    }
     createNewCard();
   };
 
