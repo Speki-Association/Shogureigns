@@ -181,15 +181,6 @@ const Card = ({
     };
   });
 
-  const animatedTopTextWrapper = useAnimatedStyle(() => {
-    return {
-      opacity:
-        interpolate(y.value, [-25, -70], [0, 1], Extrapolate.CLAMP) -
-        interpolate(x.value, [-25, -70], [0, 1], Extrapolate.CLAMP) -
-        interpolate(x.value, [25, 70], [0, 1], Extrapolate.CLAMP),
-    };
-  });
-
   const animatedLeftTextWrapper = useAnimatedStyle(() => {
     return {
       opacity:
