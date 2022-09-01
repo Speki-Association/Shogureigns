@@ -89,24 +89,7 @@
     "lock": 0,
     "yes_next_card": "amaterasu_rules_explanation",
     "no_next_card": "amaterasu_rules_explanation"
-  },
-  {
-    "kard": "amaterasu_first_contact",
-    "background": "#ccc",
-    "character": "Amaterasu - Déesse du soleil",
-    "conditions": {},
-    "image": "amaterasu",
-    "no": "Non.",
-    "no_custom": {
-      "death_by_amaterasu_no_ruler": 1
-    },
-    "question": "Bonjour toi, es-tu la nouvelle personne qui va gouverner ce clan ? ",
-    "yes": "Oui.",
-    "yes_custom": {},
-    "lock": 0,
-    "yes_next_card": "amaterasu_sex_choice",
-    "no_next_card": "death_by_amaterasu_no_ruler"
-  },
+  }
   {
     "kard": "amaterasu_king",
     "background": "#ccc",
