@@ -47,19 +47,19 @@ const Card = ({
     onEnd: (event) => {
       const tossX = event.translationX + 0.2 * event.velocityX;
       const tossY = event.translationY + 0.2 * event.velocityY;
-      if (tossX > 150 && tossY < 150 && tossY > -150) {
+      if (tossX > 150 && tossY < 150) {
         x.value = withSpring(400, {
           velocity: event.velocityX,
         });
         runOnJS(onChooseRightAnswer)();
-      } else if (tossX < -150 && tossY < 150 && tossY > -150) {
+      } else if (tossX < -150 && tossY < 150) {
         x.value = withSpring(-400, {
           velocity: event.velocityX,
         });
         runOnJS(onChooseLeftAnswer)();
       } else if (
         (tossY > 150 && tossX < 150 && image === 'geisha') ||
-        (tossY > 150 && tossX > -150 && image === 'geisha')
+        (tossY > 150 && tossX < -150 && image === 'geisha')
       ) {
         y.value = withSpring(400, {
           velocity: event.velocityY,
@@ -176,8 +176,8 @@ const Card = ({
     return {
       opacity:
         interpolate(y.value, [25, 70], [0, 1], Extrapolate.CLAMP) -
-        interpolate(x.value, [-25, -70], [0, 1], Extrapolate.CLAMP) -
-        interpolate(x.value, [25, 70], [0, 1], Extrapolate.CLAMP),
+        interpolate(x.value, [-25, -150], [0, 1], Extrapolate.CLAMP) -
+        interpolate(x.value, [25, 150], [0, 1], Extrapolate.CLAMP),
     };
   });
 
@@ -270,6 +270,9 @@ const styles = StyleSheet.create({
   topText: {
     color: '#fff',
     fontSize: 30,
+  },
+  textBottom: {
+    textAlign: 'center',
   },
   textLeft: {
     textAlign: 'right',

@@ -41,15 +41,15 @@ const StartButton = ({onPress}) => {
 const styles = StyleSheet.create({
   wrapperBack: {
     position: 'absolute',
-    height: 240,
-    width: 240,
+    height: 420,
+    width: 304,
     backgroundColor: '#aaa',
     borderRadius: 35,
     overflow: 'hidden',
   },
   cardWrapper: {
-    height: 240,
-    width: 240,
+    height: 420,
+    width: 304,
     position: 'absolute',
     alignItems: 'center',
   },
