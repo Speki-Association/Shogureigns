@@ -89,7 +89,7 @@
     "lock": 0,
     "yes_next_card": "amaterasu_rules_explanation",
     "no_next_card": "amaterasu_rules_explanation"
-  }
+  },
   {
     "kard": "amaterasu_king",
     "background": "#ccc",
