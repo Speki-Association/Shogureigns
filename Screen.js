@@ -8,7 +8,6 @@ import PlaceholderBackStaticCard from './PlaceholderBackStaticCard';
 import StartButton from './StartButton';
 import useGeneratedCards from './useGeneratedCards';
 import GeneralStatusBarColor from './GeneralStatusBarColor';
-import {cond} from 'react-native-reanimated';
 
 export default function AnimatedStyleUpdateExample() {
   const {
@@ -125,7 +124,7 @@ export default function AnimatedStyleUpdateExample() {
     setCurrentCard(getFinal());
     createNewCard();
     return true;
-  }
+  };
 
   return (
     <View style={styles.wrapper}>
