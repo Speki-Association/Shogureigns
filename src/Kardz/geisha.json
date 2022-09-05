@@ -1,0 +1,1428 @@
+[
+  {
+    "kard": "geisha_first_contact",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {},
+    "image": "geisha",
+    "no": "Tout le plaisir me revient.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Bonjour messire, ravi de vous connaître! Je suis Mineko, je serais votre plus intime confidente, donc n’ayez aucun secret et soyez honnête avec moi!",
+    "yes": "Enchanté! ",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Très bien, je vous remercie",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_1",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Avez-vous des difficultés à vous présenter à d’autres personnes?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_2",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Êtes-vous souvent si perdu(e) dans vos pensées que vous ignorez ou oubliez votre entourage?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_3",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Essayez vous de répondre dès que possible à vos messages et ne supportez pas d’avoir une boîte de messagerie mal organisée?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_4",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Avez-vous des facilités à rester serein(e) et concentré(e), même lorsque certaines situations donnent lieu à une certaine pression?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_5",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Habituellement, lancez-vous les conversations ou non?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_6",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Entreprenez-vous rarement des actions par simple curiosité?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_7",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vous sentez-vous supérieur(e) aux autres ?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_8",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Pour vous, être organisé(e) est plus important qu’être flexible ?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_9",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vous vous inquiétez rarement des conséquences de vos actions sur vos pairs, n’est-pas? ",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_10",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Gagner un débat vous importe moins que d’avoir la certitude que personne n’est contrarié ?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_11",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Avez-vous souvent l’impression de devoir vous justifier auprès de vos pairs ?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_12",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Au travail et au domicile, votre environnement de vie est-il assez ordonné ?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_13",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Je ne suis pas d’accord.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Cela ne vous dérange pas d’être le centre de l’attention, n’est-ce pas?",
+    "yes": "Je suis d’accord",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_14",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Créatif.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Considérez-vous votre esprit comme un esprit pratique ou créatif.",
+    "yes": "Pratique.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_15",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Les gens peuvent rarement vous contrarier, n’est-ce pas ?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_16",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Est-ce que vos itinéraires de voyage sont généralement planifiés à l’avance?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_17",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Avez-vous des difficultés à ressentir de l’empathie pour les sentiments des autres.",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_18",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Votre humeur peut changer très rapidement, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_19",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Pour vous au cours d’une discussion, la vérité doit-elle passer avant la susceptibilité de chacun?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_20",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Je ne suis pas d’accord.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Votre style de travail s’approche plus de pics d’énergie aléatoires que d’une approche méthodique et organisée, n’est-ce pas?",
+    "yes": "Je suis d’accord.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_21",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Êtes-vous souvent envieux(-se) des autres?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_22",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Un livre ou un jeu de société de qualité sont souvent mieux qu’une soirée mondaine pour vous?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_23",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Être capable de développer un plan et de s’y tenir est la partie la plus importante de chaque projet pour vous?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_24",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vous ne vous laissez distraire que rarement par vos rêves et pensées, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_25",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Êtes-vous souvent perdu(e) dans vos pensées lorsque vous marchez dans la nature?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_26",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Si quelqu’un ne répond pas rapidement à vos messages, vous vous inquiétez et vous demandez si vous avez dit quelque chose de mal, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_27",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Intelligent",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "En tant que parent, vous préféreriez voir votre enfant devenir gentil ou intelligent.",
+    "yes": "Gentil",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_28",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vous ne laissez pas les autres influencer vos actions, n’est-pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_29",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vos rêves ont tendance à se concentrer sur le monde réel et ses événements, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_30",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vous faut-il peu de temps pour vous impliquer dans les activités sociales de votre nouveau lieu de travail?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_31",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vous êtes plus du genre à improviser naturellement qu’à tout planifier minutieusement, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_32",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vos émotions vous contrôlent plus que vous ne les contrôlez, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_33",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vous appréciez d’aller à des soirées déguisées ou de participer à des jeux de rôle, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_34",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vous passez souvent du temps à explorer des idées irréalistes et irréalisables, mais aussi intriguantes, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_35",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vous préféreriez improviser que passer du temps sur la construction d’un plan détaillé, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_36",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Êtes-vous une personne relativement calme et réservée?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_37",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Trouveriez-vous difficile de limoger des soldats loyaux mais qui sont inefficace au combat?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_38",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Réfléchissez-vous souvent aux raisons de l’existence humaine?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_39",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "La logique est généralement plus importante que les sentiments lorsqu’il s’agit de prendre des décisions importantes, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_40",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Il est plus important de maintenir un choix de possibilités ouvert plutôt que d’avoir une liste de choses à faire, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_41",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Des solutions au problème",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Si vos amis sont vraiment tristes à propos d’une situation, vous êtes plus susceptible de leur offrir un soutien émotionnel ou de leur suggérer des solutions au problème",
+    "yes": "Un soutien émotionnel",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_42",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vous vous sentez rarement inquiet(-ète), n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_43",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vous n’avez aucune difficulté à établir un programme personnel et à vous y tenir, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_44",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Etre coopératif",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "En travail d’équipe, il est plus important d’avoir raison ou d’être coopératif pour vous?",
+    "yes": "Avoir raison ",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_45",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vous pensez que les opinions de tous doivent être respectées, indépendamment du fait qu’elles soient justifiées ou non par des faits, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_46",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Votre énergie est multipliée si vous avez passé du temps avec un groupe, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_47",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Perdez-vous fréquemment vos affaires?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_47",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Considérez-vous comme très stable au niveau émotionnel?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_48'",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Considérez-vous comme très stable au niveau émotionnel?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_49",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Votre esprit regorge constamment d’idées et de plans à explorer, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_50",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vous ne vous considérez pas comme un rêveur / une rêveuse, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_51",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Avez-vous des difficultés à vous détendre lorsque vous parlez devant de nombreuses personnes?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_52",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Généralement, vous vous fiez davantage à votre expérience qu’à votre imagination, n’est-ce pas ?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_53",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vous vous souciez trop de ce que pensent les gens, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_54",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Si la pièce est remplie de monde, vous restez près des murs et évitez le centre, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_55",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vous avez tendance à tout remettre à plus tard jusqu’à ce qu’il ne reste plus assez de temps pour tout faire, n’est-ce pas?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_56",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vous sentez-vous très anxieux(-se) dans les situations stressantes?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_57",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Etre puissant(e).",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Vous croyez qu’il est plus gratifiant d’être apprécié(e) par les autres ou d’être puissant(e).",
+    "yes": "Etre apprécié(e) des autres.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_58",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Avez-vous toujours été intéressé(e) par les sujets ambigus et atypiques (par ex. : livres, art, théatre indépendants)?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_59",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Prenez-vous souvent l’initiative dans les situations sociales?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "sixteenP_60",
+    "background": "#ccc",
+    "character": "Mineko Iwasaki - Geisha",
+    "conditions": {"first_meeting_geisha": 1},
+    "image": "geisha",
+    "no": "Non.",
+    "no_custom": {
+      "first_meeting_geisha": 1
+    },
+    "question": "Êtes-vous généralement très motivé(e) et plein(e) d’énergie ?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "first_meeting_geisha": 1
+    },
+    "bottom": "Je n'ai pas d'avis",
+    "bottom_custom": {
+      "first_meeting_geisha": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  }
+]
