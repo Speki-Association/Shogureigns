@@ -133,13 +133,17 @@
     },
     "image": "death",
     "no": "",
-    "no_custom": {},
+    "no_custom": {
+      "tsukuyomi_discover" : 1
+    },
     "question": "N’étant pas le souverain ou la souveraine attendu. Amaterasu vous infligea la mort part combustion spontanée.",
     "yes": "",
-    "yes_custom": {},
+    "yes_custom": {
+      "tsukuyomi_discover" : 1
+    },
     "lock": 0,
-    "yes_next_card": "amaterasu_first_contact",
-    "no_next_card": "amaterasu_first_contact"
+    "yes_next_card": "tsukuyomi_first_contact",
+    "no_next_card": "tsukuyomi_first_contact"
   },
   {
     "kard": "geisha_first_contact",
@@ -178,5 +182,48 @@
     "lock": -1,
     "yes_next_card": "final",
     "no_next_card": "final"
-  }
+  },
+  {
+    "kard": "tsukuyomi_first_contact",
+    "background": "#ccc",
+    "character": "Tsukuyomi - Déesse de la lune",
+    "conditions": {
+      "tsukuyomi_discover" : 1
+    },
+    "image": "tsukuyomi",
+    "no": "Mais par rapport à mon royaume …",
+    "no_custom": {
+      "Tsukuyomi_first_contact" : 1
+    },
+    "question": "Bienvenue à toi ! Te voici donc au royaume des morts ! Tu vas pouvoir venir t’enjailler et boire du saké et de l’ambroisie avec tout le monde au grand banquet des dieux!",
+    "yes": "Youhouuu !",
+    "yes_custom": {
+      "Tsukuyomi_first_contact" : 1
+    },
+    "lock": 0,
+    "yes_next_card": "amaterasu_first_contact",
+    "no_next_card": "amaterasu_first_contact"
+  },
+  {
+    "kard": "tsukuyomi_second_contact",
+    "background": "#ccc",
+    "character": "Tsukuyomi - Déesse de la lune",
+    "conditions": {
+      "tsukuyomi_first_contact" : 1,
+      "death_by_amaterasu_no_ruler" : 1
+    },
+    "image": "tsukuyomi",
+    "no": "J’ai eut un enfant moi !?",
+    "no_custom": {
+      "Tsukuyomi_second_contact" : 1
+    },
+    "question": "T’en fait pas ta progéniture s’en charge !",
+    "yes": "Yeaaaaaaaah, je peux mettre ma playlist perso sur Godify?",
+    "yes_custom": {
+      "Tsukuyomi_second_contact" : 1
+    },
+    "lock": 0,
+    "yes_next_card": "amaterasu_second_contact",
+    "no_next_card": "amaterasu_second_contact"
+  },
 ]
