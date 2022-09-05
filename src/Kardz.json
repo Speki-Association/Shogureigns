@@ -167,13 +167,11 @@
   {
     "kard": "final",
     "background": "#ccc",
-    "character": "Mineko Iwasaki - Geisha",
+    "character": "Kradouk",
     "conditions": {},
-    "image": "geisha",
+    "image": "miner",
     "no": "",
-    "no_custom": {
-      "first_meeting_geisha": 1
-    },
+    "no_custom": {},
     "question": "C'est fini, Merci d'avoir joué !",
     "yes": "",
     "yes_custom": {},

@@ -8,7 +8,7 @@ import PlaceholderBackStaticCard from './PlaceholderBackStaticCard';
 import StartButton from './StartButton';
 import useGeneratedCards from './useGeneratedCards';
 import GeneralStatusBarColor from './GeneralStatusBarColor';
-import { cond } from 'react-native-reanimated';
+import {cond} from 'react-native-reanimated';
 
 export default function AnimatedStyleUpdateExample() {
   const {
@@ -71,8 +71,7 @@ export default function AnimatedStyleUpdateExample() {
       delete conditions[currentCard.kard];
       setConditions(conditions);
     }
-    console.log(currentCard);
-    if (typeof currentCard === 'undefined') {
+    if (currentCard === undefined) {
       setCurrentCard(getFinal());
     }
     createNewCard();
@@ -92,7 +91,7 @@ export default function AnimatedStyleUpdateExample() {
       delete conditions[currentCard.kard];
       setConditions(conditions);
     }
-    if (typeof currentCard === 'undefined') {
+    if (currentCard === undefined) {
       setCurrentCard(getFinal());
     }
     createNewCard();
@@ -108,7 +107,7 @@ export default function AnimatedStyleUpdateExample() {
       delete conditions[currentCard.kard];
       setConditions(conditions);
     }
-    if (typeof currentCard === 'undefined') {
+    if (currentCard === undefined) {
       setCurrentCard(getFinal());
     }
     createNewCard();
@@ -122,50 +121,15 @@ export default function AnimatedStyleUpdateExample() {
     showNextCard(700);
   };
 
-  if (currentCardIsGeisha(currentCard)) {
-    return (
-      <View style={styles.wrapper}>
-        <GeneralStatusBarColor
-          backgroundColor="#FAFAFA"
-          barStyle="dark-content"
-        />
-        <View style={styles.topWrapper}>
-          <ImageBackground
-            source={require('./src/graphic-assets/topWrapperBg.png')}
-            resizeMode="cover"
-            style={styles.imageBG}
-          />
-        </View>
-
-        <View style={styles.questionWrapper}>
-          <Question
-            question={currentCard.question}
-            showQuestion={showQuestion}
-          />
-        </View>
-        <View style={styles.cardWrapper}>
-          {showStartButton && <StartButton onPress={onStartGame} />}
-          {showAnimatedReverseCard && <PlaceholderBackCards />}
-          {showReverseCard && <PlaceholderBackStaticCard />}
-          {showCard && (
-            <Card
-              onChooseLeftAnswer={onChooseLeftAnswer}
-              onChooseRightAnswer={onChooseRightAnswer}
-              onChooseBottomAnswer={onChooseBottomAnswer}
-              leftText={currentCard.no}
-              rightText={currentCard.yes}
-              BottomText={currentCard.bottom}
-              image={currentCard.image}
-              backgroundColor={currentCard.background}
-            />
-          )}
-        </View>
-        <View style={styles.nameWrapper} />
-      </View>
-    );
+  const setFinalCard = () => {
+    setCurrentCard(getFinal());
+    createNewCard();
+    return true;
   }
+
   return (
     <View style={styles.wrapper}>
+      <>{currentCard === undefined ? setFinalCard() : null}</>
       <GeneralStatusBarColor
         backgroundColor="#FAFAFA"
         barStyle="dark-content"
@@ -179,13 +143,29 @@ export default function AnimatedStyleUpdateExample() {
       </View>
 
       <View style={styles.questionWrapper}>
-        <Question question={currentCard.question} showQuestion={showQuestion} />
+        {currentCard === undefined && setFinalCard() ? null : (
+          <Question
+            question={currentCard.question}
+            showQuestion={showQuestion}
+          />
+        )}
       </View>
       <View style={styles.cardWrapper}>
         {showStartButton && <StartButton onPress={onStartGame} />}
         {showAnimatedReverseCard && <PlaceholderBackCards />}
         {showReverseCard && <PlaceholderBackStaticCard />}
-        {showCard && (
+        {showCard && currentCardIsGeisha(currentCard) ? (
+          <Card
+            onChooseLeftAnswer={onChooseLeftAnswer}
+            onChooseRightAnswer={onChooseRightAnswer}
+            onChooseBottomAnswer={onChooseBottomAnswer}
+            leftText={currentCard.no}
+            rightText={currentCard.yes}
+            BottomText={currentCard.bottom}
+            image={currentCard.image}
+            backgroundColor={currentCard.background}
+          />
+        ) : showCard && currentCard !== undefined ? (
           <Card
             onChooseLeftAnswer={onChooseLeftAnswer}
             onChooseRightAnswer={onChooseRightAnswer}
@@ -194,7 +174,7 @@ export default function AnimatedStyleUpdateExample() {
             image={currentCard.image}
             backgroundColor={currentCard.background}
           />
-        )}
+        ) : null}
       </View>
       <View style={styles.nameWrapper} />
     </View>
