@@ -146,29 +146,6 @@
     "no_next_card": "tsukuyomi_first_contact"
   },
   {
-    "kard": "geisha_first_contact",
-    "background": "#ccc",
-    "character": "Mineko Iwasaki - Geisha",
-    "conditions": {},
-    "image": "geisha",
-    "no": "Tout le plaisir me revient.",
-    "no_custom": {
-      "first_meeting_geisha": 1
-    },
-    "question": "Bonjour messire, ravi de vous connaître! Je suis Mineko, je serais votre plus intime confidente, donc n’ayez aucun secret et soyez honnête avec moi!",
-    "yes": "Enchanté! ",
-    "yes_custom": {
-      "first_meeting_geisha": 1
-    },
-    "bottom": "Très bien, je vous remercie",
-    "bottom_custom" : {
-      "first_meeting_geisha": 1
-    },
-    "lock": 0,
-    "yes_next_card": "",
-    "no_next_card": ""
-  },
-  {
     "kard": "final",
     "background": "#ccc",
     "character": "Kradouk",

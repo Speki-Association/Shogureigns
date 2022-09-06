@@ -15,7 +15,12 @@ export default function useGeneratedCards() {
     }
     return array;
   }
-  const Cards = shuffle(require('./src/Kardz.json'));
+  const Kardz = require('./src/Kardz/kardz.json');
+  const Geisha = require('./src/Kardz/geisha.json');
+  const Cards = shuffle(Kardz.concat(Geisha));
+  Cards.forEach((element) => {
+    console.log(element);
+  });
 
   // let currentCardIndex = 0;
 
