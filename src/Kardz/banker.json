@@ -1,0 +1,380 @@
+[
+    {
+        "kard": "banker_first_contact",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {},
+        "image": "daimyo",
+        "no": "Euh…",
+        "no_custom": {
+          "first_meeting_banker": 1
+        },
+        "question": "Messire, je suis Carlos Gone, directeur réputé des écuries Nichan. Je vais vous aider à gérer l’économie de ce pays pour en faire le royaume le plus prospère du monde !",
+        "yes": "Que…",
+        "yes_custom": {
+          "first_meeting_banker": 1
+        },
+        "lock": 0,
+        "yes_next_card": "",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_first_deal",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "first_meeting_banker": 1
+        },
+        "image": "daimyo",
+        "no": "Non.",
+        "no_custom": {},
+        "question": "Messire, j’ai obtenu un échange avec un grand commercant venant d’Orient ! Il nous demande de lui donner “1” terrain pour “0” Yen afin d’installer une de ses échoppes. Acceptez-vous ?",
+        "yes": "Oui.",
+        "yes_custom": {
+          "welcome_trader": 1
+        },
+        "lock": 0,
+        "yes_next_card": "",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_first_deal_first_result",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "welcome_trader": 1
+        },
+        "image": "daimyo",
+        "no": "Très bien !",
+        "no_custom": {
+          "welcome_trader": 2
+        },
+        "question": "Le commerçant s’est installé, je vous remercie pour l’aide apportée !",
+        "yes": "D’accord.",
+        "yes_custom": {
+          "welcome_trader": 2
+        },
+        "lock": 0,
+        "yes_next_card": "",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_first_deal_second_result",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "welcome_trader": 2
+        },
+        "image": "daimyo",
+        "no": "Attaquez-les !",
+        "no_custom": {},
+        "question": "Le commerçant qui s’est installé il y a peu de temps … Il a engagé des mercenaires et souhaite nous attaquer. Je suis désolé Messire !",
+        "yes": "Donnez leur plus d’argent et faites en sorte qu’ils s’en aillent !",
+        "yes_custom": {},
+        "lock": 0,
+        "yes_next_card": "",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_first_investment",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "first_meeting_banker": 1
+        },
+        "image": "daimyo",
+        "no": "Non.",
+        "no_custom": {
+          "dont_invest_soja": 1
+        },
+        "question": "Messire, je vous invite à investir dans le soja pour pouvoir nourrir le peuple et être indépendant pour ce type de culture !",
+        "yes": "D’accord !",
+        "yes_custom": {
+          "invest_soja": 1
+        },
+        "lock": 0,
+        "yes_next_card": "",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_first_investment_yes_result",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "invest_soja": 1
+        },
+        "image": "daimyo",
+        "no": "Parfait !",
+        "no_custom": {},
+        "question": "Messire, la récolte a été meilleure qu’espérée. Toute la population est nourrie et l’argent coule à flot !",
+        "yes": "Wouhou !",
+        "yes_custom": {},
+        "lock": 0,
+        "yes_next_card": "",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_first_investment_no_result",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "dont_invest_soja": 1
+        },
+        "image": "daimyo",
+        "no": "Très bien.",
+        "no_custom": {},
+        "question": "Messire, le royaume n’a pas progressé mais n’a pas régressé non plus.",
+        "yes": "D’accord.",
+        "yes_custom": {},
+        "lock": 0,
+        "yes_next_card": "",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_second_deal",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "first_meeting_banker": 1
+        },
+        "image": "daimyo",
+        "no": "Non.",
+        "no_custom": {
+          "dont_deal_training": 1
+        },
+        "question": "Messire, une personne m’a contacté pour investir dans sa formation afin de devenir millionnaire en 5 minutes. Voulez-vous vous même investir ?",
+        "yes": "Oui.",
+        "yes_custom": {
+          "deal_training": 1
+        },
+        "lock": 0,
+        "yes_next_card": "",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_second_deal_yes_result",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "deal_training": 1
+        },
+        "image": "daimyo",
+        "no": "Non.",
+        "no_custom": {},
+        "question": "La formation était une arnaque … Voulez-vous payer pour faire assassiner ce formateur frauduleux ?",
+        "yes": "Oui.",
+        "yes_custom": {},
+        "lock": 0,
+        "yes_next_card": "",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_second_deal_yes_result",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "dont_deal_training": 1
+        },
+        "image": "daimyo",
+        "no": "Vous ne m’attirez que des problèmes !",
+        "no_custom": {},
+        "question": "La formation était une arnaque … Voulez-vous payer pour faire assassiner ce formateur frauduleux ?",
+        "yes": "Ouf !",
+        "yes_custom": {},
+        "lock": 0,
+        "yes_next_card": "",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_second_investment",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "first_meeting_banker": 1
+        },
+        "image": "daimyo",
+        "no": "Non.",
+        "no_custom": {},
+        "question": "Messire, j’ai trouvé une solution miracle pour dupliquer de l’argent ! Il me faut uniquement un de vos Yens et je vous rendrais le double !",
+        "yes": "D’accord.",
+        "yes_custom": {
+          "invest_solution": 1
+        },
+        "lock": 0,
+        "yes_next_card": "banker_second_investment_yes_first_result",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_second_investment_yes_first_result",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "invest_solution": 1
+        },
+        "image": "daimyo",
+        "no": "Non.",
+        "no_custom": {},
+        "question": "Messire, je peux reproduire ceci à l’infini, mais allons-y étape par étape, voulez-vous bien me donner 2.000 Yens ?",
+        "yes": "Très bien.",
+        "yes_custom": {
+          "invest_solution": 2
+        },
+        "lock": 0,
+        "yes_next_card": "banker_second_investment_yes_second_result",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_second_investment_yes_second_result",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "invest_solution": 2
+        },
+        "image": "daimyo",
+        "no": "Non.",
+        "no_custom": {},
+        "question": "Messire, passons à 3.000.000 Yens, je vous prie !",
+        "yes": "D’accord !",
+        "yes_custom": {
+          "invest_solution": 3
+        },
+        "lock": 0,
+        "yes_next_card": "banker_second_investment_yes_third_result",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_second_investment_yes_third_result",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "invest_solution": 3
+        },
+        "image": "daimyo",
+        "no": "Non.",
+        "no_custom": {},
+        "question": "Messire, donnez-moi toute l’économie du royaume et nous n’aurons plus jamais besoin de s’inquiéter pour l’argent.",
+        "yes": "Super !",
+        "yes_custom": {
+          "invest_solution": 4
+        },
+        "lock": 0,
+        "yes_next_card": "banker_second_investment_yes_fourth_result",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_second_investment_yes_fourth_result",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "invest_solution": 3
+        },
+        "image": "daimyo",
+        "no": "…",
+        "no_custom": {},
+        "question": "Le banquier est parti avec la caisse et n’est jamais revenu …",
+        "yes": "…",
+        "yes_custom": {
+          "invest_solution": 4
+        },
+        "lock": 0,
+        "yes_next_card": "",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_third_investment",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "first_meeting_banker": 1
+        },
+        "image": "daimyo",
+        "no": "Non.",
+        "no_custom": {
+          "dont_invest_manga": 1
+        },
+        "question": "Messire, le peuple adore une nouvelle forme de culture, ils appellent cela les mangas ! Engageons quelques artistes pour créer une oeuvre qui promeut l’armée !",
+        "yes": "D’accord",
+        "yes_custom": {
+          "invest_manga": 1
+        },
+        "lock": 0,
+        "yes_next_card": "",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_third_investment_yes_first_result",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "invest_manga": 1
+        },
+        "image": "daimyo",
+        "no": "Génial !",
+        "no_custom": {
+          "invest_manga": 2
+        },
+        "question": "Le peuple a adoré ‘Tako e no kōgeki' ! Tous les enfants veulent devenir des soldats ! Et l’argent coule de nouveau à flot grâce aux ventes !",
+        "yes": "Merveilleux !",
+        "yes_custom": {
+          "invest_manga": 2
+        },
+        "lock": 0,
+        "yes_next_card": "",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_third_investment_no_first_result",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "dont_invest_manga": 1
+        },
+        "image": "daimyo",
+        "no": "Qu’est-ce que ça peut me faire ?",
+        "no_custom": {},
+        "question": "Le peuple continue à avoir une aversion pour l’armée. Vos hommes sont démoralisés.",
+        "yes": "Donnez-leur du réconfort",
+        "yes_custom": {},
+        "lock": 0,
+        "yes_next_card": "",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_third_investment_yes_second_result",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "invest_manga": 2
+        },
+        "image": "daimyo",
+        "no": "Super !",
+        "no_custom": {
+          "invest_manga": 3
+        },
+        "question": "‘Tako e no kōgeki' est devenu un investissement sur le long terme ! Les mangakas ont prévus une suite pouvant durer une centaine d’années !",
+        "yes": "Parfait !",
+        "yes_custom": {
+          "invest_manga": 3
+        },
+        "lock": 0,
+        "yes_next_card": "",
+        "no_next_card": ""
+      },
+      {
+        "kard": "banker_third_investment_yes_third_result",
+        "background": "#ccc",
+        "character": "Carlos Gone - Le Banquier",
+        "conditions": {
+          "invest_manga": 3
+        },
+        "image": "daimyo",
+        "no": "J’espère que la fin sera meilleure que celle de Noruta",
+        "no_custom": {},
+        "question": "Le peuple s’est lassé de ‘Tako e no kōgeki'. Le manga va devoir se finir prématurément !",
+        "yes": "Oh non !",
+        "yes_custom": {},
+        "lock": 0,
+        "yes_next_card": "",
+        "no_next_card": ""
+      }
+]

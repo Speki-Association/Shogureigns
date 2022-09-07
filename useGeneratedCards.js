@@ -17,8 +17,12 @@ export default function useGeneratedCards() {
   }
   const Kardz = require('./src/Kardz/kardz.json');
   const Geisha = require('./src/Kardz/geisha.json');
-  const Kradouk = require('./src/Kardz/kradouk.json');
-  const Cards = shuffle(Kardz.concat(Geisha).concat(Kradouk));
+  const Miner = require('./src/Kardz/miner.json');
+  const Monk = require('./src/Kardz/monk.json');
+  const Banker = require('./src/Kardz/banker.json');
+  const Cards = shuffle(
+    Kardz.concat(Geisha).concat(Miner).concat(Monk).concat(Banker),
+  );
 
   const verifyCard = (card, conditions) => {
     if (card.lock === -1) {
