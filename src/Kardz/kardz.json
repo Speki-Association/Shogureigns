@@ -121,8 +121,8 @@
     "yes": "Ok.",
     "yes_custom": {},
     "lock": 0,
-    "yes_next_card": "",
-    "no_next_card": ""
+    "yes_next_card": "geisha_first_contact",
+    "no_next_card": "geisha_first_contact"
   },
   {
     "kard": "death_by_amaterasu_no_ruler",
@@ -202,5 +202,5 @@
     "lock": 0,
     "yes_next_card": "amaterasu_second_contact",
     "no_next_card": "amaterasu_second_contact"
-  },
+  }
 ]

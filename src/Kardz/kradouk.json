@@ -1,0 +1,372 @@
+[
+  {
+    "kard": "miner_first_contact",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {},
+    "image": "miner",
+    "no": "D’accord.",
+    "no_custom": {
+      "first_meeting_miner": 1
+    },
+    "question": "Monsieur, c’est Kradouk-sama ! Je vais diriger les fouilles dans les mines, monsieur !",
+    "yes": "Très bien, je vous remercie !",
+    "yes_custom": {
+      "first_meeting_miner": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "miner_first_discover",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "first_meeting_miner": 1
+    },
+    "image": "miner",
+    "no": "Donnez-les au peuple, je vous prie !",
+    "no_custom": {},
+    "question": "Monsieur, monsieur, monsieur ! On a trouvé des petites pépites dans la mine ! Voilà pour vous !",
+    "yes": "Je vous remercie Kradouk !",
+    "yes_custom": {},
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "miner_second_discover",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "first_meeting_miner": 1
+    },
+    "image": "miner",
+    "no": "Jetez-moi ça à la poubelle !",
+    "no_custom": {
+      "throw_geta": 1
+    },
+    "question": "Monsieur, monsieur, monsieur ! On a trouvé une vieille paire de Geta ! Voilà pour vous !",
+    "yes": "Je vous remercie Kradouk !",
+    "yes_custom": {
+      "get_geta": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "miner_second_discover_yes_result",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "get_geta": 1
+    },
+    "image": "miner",
+    "no": "Très bien, voyons ce qu’elles peuvent faire !",
+    "no_custom": {},
+    "question": "Monsieur ! La paire de Geta brille dans vos mains, je pense qu’elles sont magiques ! (True Sight sur les prochaines propositions)",
+    "yes": "Encore une fois, merci !",
+    "yes_custom": {},
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "miner_second_discover_no_result",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "throw_geta": 1
+    },
+    "image": "miner",
+    "no": "Très bien, voyons ce qu’elles peuvent faire !Ah bah bravo Kradouk pour la paire de Geta !",
+    "no_custom": {},
+    "question": "Monsieur ! Kradouk est devenu magicien ! Regardez je peux faire du feu avec mes mains ! Oh … Non ! Je les ai brulées !",
+    "yes": "Ce n’est pas grave, voilà un peu d’argent pour vous en racheter une !",
+    "yes_custom": {},
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "miner_first_investment",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "first_meeting_miner": 1
+    },
+    "image": "miner",
+    "no": "Non.",
+    "no_custom": {
+      "dont_dig_submarine_mine": 1
+    },
+    "question": "Monsieur ! Kradouk et son équipe pensent avoir trouver un nouvel endroit pour miner ! Voulez-vous ouvrir cette mine ?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "dig_submarine_mine": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "miner_first_investment_yes_result",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "dig_submarine_mine": 1
+    },
+    "image": "miner",
+    "no": "Partagez les ressources avec le peuple et l’armée !",
+    "no_custom": {},
+    "question": "Monsieur ! C’était une mine sous-marine, on a récupéré beaucoup de Jade ! Vous êtes riche ! ",
+    "yes": "Génial !",
+    "yes_custom": {},
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "miner_first_investment_no_result",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "dont_dig_submarine_mine": 1
+    },
+    "image": "miner",
+    "no": "Oh …",
+    "no_custom": {},
+    "question": "Monsieur ! C’était une mine sous-marine, on a récupéré beaucoup de Jade ! Vous êtes riche ! ",
+    "yes": "Oh …",
+    "yes_custom": {},
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "miner_third_discover",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "first_meeting_miner": 1
+    },
+    "image": "miner",
+    "no": "Laissez-les, ils pourraient être hantés !",
+    "no_custom": {
+      "dont_dig_cemetery": 1
+    },
+    "question": "Monsieur ! Nous avons trouvé un ancien cimetière sous-terrain ! Voici quelques objets que nous avons pu récolter !",
+    "yes": "Très bien, je vous remercie !",
+    "yes_custom": {
+      "dig_cemetery": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "miner_third_discover_yes_first_result",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "dig_cemetery": 1
+    },
+    "image": "miner",
+    "no": "Des fantômes … Vraiment ?",
+    "no_custom": {
+      "dont_call_army": 1
+    },
+    "question": "Monsieur ! Il y a des Yokais partout !",
+    "yes": "Appelez l’armée !",
+    "yes_custom": {},
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "miner_third_discover_no_result",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "dont_dig_cemetery": 1
+    },
+    "image": "miner",
+    "no": "Tant mieux, n’entrez plus jamais là dedans !",
+    "no_custom": {},
+    "question": "Monsieur ! Vous aviez raison ! Les esprits se sont apaisés en retournant dans leur cimetière !",
+    "yes": "Ouf …",
+    "yes_custom": {},
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "miner_third_discover_yes_second_result",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "dont_call_army": 1
+    },
+    "image": "miner",
+    "no": "Ce n’est vraiment pas dr… AAaaAaAaaAAAAAH !!!",
+    "no_custom": {},
+    "question": "Monsieur ! Il y en a un juste derrière vous !",
+    "yes": "AaaaAAAAaaAH !!!",
+    "yes_custom": {},
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "miner_second_investment",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "first_meeting_miner": 1
+    },
+    "image": "miner",
+    "no": "Non.",
+    "no_custom": {
+      "dont_buy_tools": 1
+    },
+    "question": "Monsieur ! Des outils automatiques pour améliorer notre efficacité de minage ont été inventés ! Voulez-vous investir pour que nous creusions plus vite ?",
+    "yes": "Oui.",
+    "yes_custom": {
+      "buy_tools": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "miner_second_investment_yes_first_result",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "buy_tools": 1
+    },
+    "image": "miner",
+    "no": "Non merci.",
+    "no_custom": {},
+    "question": "Monsieur ! C’est merveilleux ! Voici tout ce qu’on a récolté ! D’autres outils existent, voulez-vous les acheter aussi ?",
+    "yes": "Oui !",
+    "yes_custom": {
+      "buy_fake_tools": 1
+    },
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "miner_second_investment_no_result",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "dont_buy_tools": 1
+    },
+    "image": "miner",
+    "no": "Non …",
+    "no_custom": {},
+    "question": "Monsieur ! Les mineurs font grève et veulent des augmentations pour travailler sans matériel !",
+    "yes": "Très bien …",
+    "yes_custom": {},
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "miner_second_investment_yes_second_result",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "buy_fake_tools": 1
+    },
+    "image": "miner",
+    "no": "Et bien dommage …",
+    "no_custom": {},
+    "question": "Monsieur ! Les seconds outils étaient mensongers ! Ils ne fonctionnent pas et les artisans refusent de nous les rembourser !",
+    "yes": "Envoyez l’armée !",
+    "yes_custom": {},
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "miner_fourth_discover",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "first_meeting_miner": 1
+    },
+    "image": "miner",
+    "no": "Sortez-moi ça d’ici !",
+    "no_custom": {
+      "throw_box": 1
+    },
+    "question": "Monsieur ! On a trouvé cette jolie boîte qui fait “Psshiiit” ! Voilà pour vous !",
+    "yes": "Voyons voir !",
+    "yes_custom": {
+      "take_box": 1
+    },
+    "lock": 0,
+    "yes_next_card": "miner_fourth_discover_yes_first_result",
+    "no_next_card": "miner_fourth_discover_no_result"
+  },
+  {
+    "kard": "miner_fourth_discover_yes_first_result",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "take_box": 1
+    },
+    "image": "miner",
+    "no": "Sortez ça de cette pièce !",
+    "no_custom": {
+      "throw_box": 1
+    },
+    "question": "Monsieur ! Le contenant détient un autre contenant ! Ouvrons-le !",
+    "yes": "Hmmm ",
+    "yes_custom": {
+      "open_box": 1
+    },
+    "lock": 0,
+    "yes_next_card": "miner_fourth_discover_yes_second_result",
+    "no_next_card": "miner_fourth_discover_no_result"
+  },
+  {
+    "kard": "miner_fourth_discover_yes_second_result",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "open_box": 1
+    },
+    "image": "miner",
+    "no": "…",
+    "no_custom": {},
+    "question": "Monsieur ! C’est quoi ce “Tic Tic” ? (La bombe explose et tout le monde est blessé)",
+    "yes": "…",
+    "yes_custom": {},
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  },
+  {
+    "kard": "miner_fourth_discover_no_result",
+    "background": "#ccc",
+    "character": "Kradouk - Le Mineur",
+    "conditions": {
+      "throw_box": 1
+    },
+    "image": "miner",
+    "no": "Ouf … C’était de la chance",
+    "no_custom": {},
+    "question": "Monsieur ! C’était une bombe ! Mes félicitations pour l’avoir présenti !",
+    "yes": "Ouf … Merci à vous de l’avoir sorti rapidement",
+    "yes_custom": {},
+    "lock": 0,
+    "yes_next_card": "",
+    "no_next_card": ""
+  }
+]

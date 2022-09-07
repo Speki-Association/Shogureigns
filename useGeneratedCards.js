@@ -17,25 +17,8 @@ export default function useGeneratedCards() {
   }
   const Kardz = require('./src/Kardz/kardz.json');
   const Geisha = require('./src/Kardz/geisha.json');
-  const Cards = shuffle(Kardz.concat(Geisha));
-  Cards.forEach((element) => {
-    console.log(element);
-  });
-
-  // let currentCardIndex = 0;
-
-  // const getCardByIndex = () => {
-  //   do {
-  //     currentCardIndex++;
-  //   } while (
-  //     Cards[currentCardIndex].conditions !== '' &&
-  //     currentCardIndex < Cards.length
-  //   );
-  //   if (currentCardIndex >= Cards.length) {
-  //     return Cards[0];
-  //   }
-  //   return Cards[currentCardIndex];
-  // };
+  const Kradouk = require('./src/Kardz/kradouk.json');
+  const Cards = shuffle(Kardz.concat(Geisha).concat(Kradouk));
 
   const verifyCard = (card, conditions) => {
     if (card.lock === -1) {
