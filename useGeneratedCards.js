@@ -23,6 +23,13 @@ export default function useGeneratedCards() {
   const Cards = shuffle(
     Kardz.concat(Geisha).concat(Miner).concat(Monk).concat(Banker),
   );
+  /* Debugger : */
+  console.log('Kardz : ', Cards.length);
+  console.log('Kardz Geisha : ', Geisha.length);
+  console.log('Kardz Miner : ', Miner.length);
+  console.log('Kardz Monk : ', Monk.length);
+  console.log('Kardz Banker : ', Banker.length);
+  /* End debugger */
 
   const verifyCard = (card, conditions) => {
     if (card.lock === -1) {
