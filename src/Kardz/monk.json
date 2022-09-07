@@ -392,5 +392,102 @@
         "lock": 0,
         "yes_next_card": "message_ex",
         "no_next_card": ""
-      }
+      },
+      {
+        "kard": "message_ex",
+        "background": "#ccc",
+        "character": "Moine",
+        "conditions": {
+            "message_ex": 1
+        },
+        "image": "shogun",
+        "no": "Ok.",
+        "no_custom": {
+            "monk_chartreuse": 3
+        },
+        "question": "Vous envoyez un corbeau messager avec un message pour votre ex-compagne la suppliant de revenir.",
+        "yes": "Ok.",
+        "yes_custom": {
+            "monk_chartreuse": 3
+        },
+        "lock": 0,
+        "yes_next_card": "monk_chartreuse_3",
+        "no_next_card": "monk_chartreuse_3"
+    },
+    {
+        "kard": "monk_chartreuse_3",
+        "background": "#ccc",
+        "character": "Moine",
+        "conditions": {
+            "monk_chartreuse": 3
+        },
+        "image": "shogun",
+        "no": "Noooooon !",
+        "no_custom": {},
+        "question": "Brooooo, * hips * , encore une petite bolinette ? C’est un petit bol! * hips *",
+        "yes": "Je suis des vooooooootreuh ! * hips * J’ai bu mon saké commeuh touuus les auuuuutreuh!",
+        "yes_custom": {
+            "southeast_war": 1
+        },
+        "lock": 0,
+        "yes_next_card": "southeast_war",
+        "no_next_card": ""
+    },
+    {
+        "kard": "southeast_war",
+        "background": "#ccc",
+        "character": "Moine",
+        "conditions": {
+            "southeast_war": 1
+        },
+        "image": "shogun",
+        "no": "Ok.",
+        "no_custom": {
+            "monk_chartreuse": 4
+        },
+        "question": "Vous décidez dans votre état de déclarer la guerre avec le clan du Sud-Est",
+        "yes": "Ok.",
+        "yes_custom": {
+            "monk_chartreuse": 4
+        },
+        "lock": 0,
+        "yes_next_card": "monk_chartreuse_4",
+        "no_next_card": "monk_chartreuse_4"
+    },
+    {
+        "kard": "monk_chartreuse_4",
+        "background": "#ccc",
+        "character": "Moine",
+        "conditions": {
+            "monk_chartreuse": 4
+        },
+        "image": "shogun",
+        "no": "* vomir *",
+        "no_custom": {},
+        "question": "Du sake, des geisha et des high ball nom d’amaterasu, * hips * un koto pour valser tant qu’on veut … ",
+        "yes": "… du sake, des geisha et des high ball nom d’amaterasu, * hips * Qu’un yokai nous emporte on a rien trouvé de mieux ! ",
+        "yes_custom": {
+            "death_by_drowning_koikoi": 1
+        },
+        "lock": 0,
+        "yes_next_card": "death_by_drowning_koikoi",
+        "no_next_card": ""
+    },
+    {
+        "kard": "death_by_drowning_koikoi",
+        "background": "#ccc",
+        "character": "Moine",
+        "conditions": {
+            "death_by_drowning_koikoi": 1
+        },
+        "image": "shogun",
+        "no": "",
+        "no_custom": {},
+        "question": "En voulant rentrer à votre palais totalement soul, vous trébucher dans le bassin aux poisson koikoi. Vous mourrez noyer ainsi.",
+        "yes": "",
+        "yes_custom": {},
+        "lock": 0,
+        "yes_next_card": "",
+        "no_next_card": ""
+    }
 ]
